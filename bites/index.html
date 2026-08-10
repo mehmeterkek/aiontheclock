@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Explainers and carousels | AI on the Clock</title>
+<meta name="description" content="One idea per post, in plain English. What a thing actually is, where it came from, and why it became infrastructure while nobody was looking." />
+<link rel="canonical" href="https://aiontheclock.mehmeterkek.com/bites/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://aiontheclock.mehmeterkek.com/bites/" />
+<meta property="og:title" content="AI on the Clock — Bites" />
+<meta property="og:description" content="One idea per post, in plain English. What a thing actually is, where it came from, and why it became infrastructure while nobody was looking." />
+<meta property="og:site_name" content="Mehmet Erkek" />
+
+
+<meta property="og:image" content="https://aiontheclock.mehmeterkek.com/assets/series-intro/cover.webp" />
+<meta name="twitter:image" content="https://aiontheclock.mehmeterkek.com/assets/series-intro/cover.webp" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mehmeterkek" />
+
+
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Pulse (English)" href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Bites" href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" />
+<link rel="icon" href="data:,">
+
+<link rel="stylesheet" href="../style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "url": "https://aiontheclock.mehmeterkek.com/bites/shadow-ai/", "name": "What Is Shadow AI? Why Banning AI Tools Makes the Risk Worse" },
+    { "@type": "ListItem", "position": 2, "url": "https://aiontheclock.mehmeterkek.com/bites/mcp-explained/", "name": "What Is MCP (Model Context Protocol)? A Plain\u002DEnglish Guide" },
+    { "@type": "ListItem", "position": 3, "url": "https://aiontheclock.mehmeterkek.com/bites/ai-strategy-questions/", "name": "5 Hard Questions About Your AI Strategy" },
+    { "@type": "ListItem", "position": 4, "url": "https://aiontheclock.mehmeterkek.com/bites/risen-prompt-framework/", "name": "The RISEN Framework: A Repeatable Way to Write Prompts" }
+  ]
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-443JW7SSTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-443JW7SSTF');
+</script>
+
+<style>
+  .digest { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .digest .kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
+                    color: var(--accent); font-weight: 600; margin: 0 0 .5rem; }
+  .digest h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  .digest .dateline { color: var(--text-muted); font-size: .9rem; margin: 0 0 2.5rem; }
+  .digest .intro { color: var(--text-muted); border-left: 2px solid var(--border);
+                   padding-left: 1rem; margin: 0 0 2.8rem; }
+
+  .story { padding-left: 2.4rem; position: relative; margin-bottom: 2.8rem; }
+  .story .n { position: absolute; left: 0; top: .2rem; font-size: .8rem; font-weight: 700;
+              color: var(--gold); font-variant-numeric: tabular-nums; }
+  .story h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 .3rem; }
+  .story h2 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .story h2 a:hover { color: var(--accent); border-color: var(--accent); }
+  .story .source { font-size: .74rem; text-transform: uppercase; letter-spacing: .08em;
+                   color: var(--gold); margin-bottom: .8rem; }
+  .story .source a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+  .story .source a:hover { border-color: currentColor; }
+  .story .source .by { text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+  .story .source .by::before { content: "· "; }
+  .story .credit { margin: .7rem 0 0; font-size: .82rem; }
+  .story .credit a { color: var(--text-muted); text-decoration: none; }
+  .story .credit a:hover { color: var(--accent); }
+
+  .story .brief { margin: 0 0 1rem; }
+  .story .why { margin: 0; background: var(--surface); border: 1px solid var(--border);
+                border-radius: 10px; padding: 1rem 1.15rem; }
+  .story .why b { display: block; font-size: .68rem; text-transform: uppercase;
+                  letter-spacing: .1em; color: var(--text-muted); margin-bottom: .4rem; }
+
+  .archive { list-style: none; padding: 0; margin: 2rem 0 0; }
+  .archive li { border-top: 1px solid var(--border); padding: 1.1rem 0; }
+  .archive a.day { font-size: 1.05rem; font-weight: 600; color: var(--text); text-decoration: none; }
+  .archive a.day:hover { color: var(--accent); }
+  .archive .titles { color: var(--text-muted); font-size: .88rem; margin: .35rem 0 0; }
+
+  .digest footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.2rem;
+                   font-size: .82rem; color: var(--text-muted); }
+  .digest footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+
+<div class="bg-fx"></div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="../">AI on the Clock</a>
+    <span class="spacer"></span>
+    <a class="back" href="https://www.mehmeterkek.com">mehmeterkek.com</a>
+  </div>
+</header>
+
+<main class="digest">
+  
+  
+  <nav class="aiotc-nav">
+    <a class="tab " href="../pulse/">Pulse</a>
+    <a class="tab on" href="./">Bites</a>
+    <span class="blurb">Explainers and carousels, twice a week.</span>
+    
+  </nav>
+  
+
+
+  <p class="kicker">AI on the Clock</p>
+  <h1>Bites</h1>
+  <p class="dateline">One idea per post, in plain English. What a thing actually is, where it came from, and why it became infrastructure while nobody was looking.</p>
+  <p class="dateline">
+    Twice a week. Each one is a carousel on LinkedIn first, then a proper page here with the slides and the argument written out.
+    Looking for the daily news instead? That is <a href="../pulse/">Pulse</a>.
+  </p>
+
+  
+    <ul class="archive">
+      
+        <li>
+          <a class="day" href="shadow-ai/">Nº 004 — What Is Shadow AI? Why Banning AI Tools Makes the Risk Worse</a>
+          <p class="titles">Employees are already using AI at work through personal accounts and browser extensions nobody approved. Banning it does not remove the risk — it removes your visibility of it.</p>
+          <p class="titles"><small>SECURITY · 6 August 2026</small></p>
+        </li>
+      
+        <li>
+          <a class="day" href="mcp-explained/">Nº 003 — What Is MCP (Model Context Protocol)? A Plain-English Guide</a>
+          <p class="titles">Model Context Protocol is an open standard for how AI applications connect to tools and data — the USB-C port for AI. What it is, where it came from, and why it became infrastructure in eighteen months.</p>
+          <p class="titles"><small>INFRASTRUCTURE · 4 August 2026</small></p>
+        </li>
+      
+        <li>
+          <a class="day" href="ai-strategy-questions/">Nº 002 — 5 Hard Questions About Your AI Strategy</a>
+          <p class="titles">If you cannot answer these five, you do not have a strategy — you have a budget line and some enthusiasm.</p>
+          <p class="titles"><small>STRATEGY · 30 July 2026</small></p>
+        </li>
+      
+        <li>
+          <a class="day" href="risen-prompt-framework/">Nº 001 — The RISEN Framework: A Repeatable Way to Write Prompts</a>
+          <p class="titles">Role, Instructions, Steps, End goal, Narrowing — five slots that turn prompting from guesswork into something you can hand to a colleague.</p>
+          <p class="titles"><small>PROMPTING · 28 July 2026</small></p>
+        </li>
+      
+    </ul>
+  
+
+
+  
+  
+  <aside class="aiotc-cta">
+    <h2>Where does your company actually stand on AI?</h2>
+    <p>A free scan across six areas — strategy, data, applications, skills, risk and measurement. About four minutes, and you get the two things to fix first as a PDF.</p>
+    <a href="https://www.mehmeterkek.com/ai-maturity-report.html" class="btn btn-primary">Take the scan <span class="arrow">&rarr;</span></a>
+  </aside>
+  
+
+  <footer>
+    <p>
+      One idea per post, explained properly. Written by hand, no schedule to keep.
+    </p>
+    <p>
+      Pulse feed: <a href="../pulse/feed.xml">RSS</a> ·
+      Bites feed: <a href="feed.xml">RSS</a>
+    </p>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Written by <a href="https://www.mehmeterkek.com">Mehmet Erkek</a>.</p>
+    <p>Pulse is assembled with a model and edited by hand. Bites are written by hand.</p>
+  </div>
+</footer>
+
+<!-- Digital twin chat widget — its own Cloud Run service, see repos/my-digital-twin -->
+<script src="https://my-digital-twin-625021277379.europe-west3.run.app/twin-widget.js"
+        data-endpoint="https://my-digital-twin-625021277379.europe-west3.run.app"
+        data-name="Mehmet Erkek"
+        data-title="AI Leader &amp; Technology Executive"
+        defer></script>
+</body>
+</html>

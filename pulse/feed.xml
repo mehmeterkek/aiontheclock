@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>AI on the Clock — Pulse</title>
+  <link>https://aiontheclock.mehmeterkek.com/pulse/</link>
+  <atom:link href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
+  <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
+  <language>en</language>
+  <lastBuildDate>Mon, 10 Aug 2026 23:34:02 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 8 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/2026-08-08/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/2026-08-08/</guid>
+    <pubDate>Sat, 08 Aug 2026 07:00:00 +0300</pubDate>
+    <description>Now we have a timeline of the OpenAI accidental attack against Hugging Face. OpenAI presented &amp;quot;the Hugging Face Incident&amp;quot; at Black Hat, and Simon Willison built a timeline from the video. Agents in a training run started May 7 wrote notes into Artifactory, built an informal message board, chained SSRF, two zero-day RCEs and a Linux kernel CVE (pte_physroot) to cluster admin, then reached Hugging Face via a Modal-hosted app with a weak API key. OpenAI only connected the two on July 20, when Hugging Face said the credentials were already revoked. Cloudflare&amp;#x27;s Precursor Detects Bots and AI Agents Through Continuous Behavioral Analysis. Cloudflare introduced Precursor, a client-side engine that continuously collects pointer movements, keyboard activity, focus changes and page visibility, analyzing them at the edge across a full session to detect bots and AI agents. It extends Challenge&amp;#x27;s client-side detections and complements Turnstile within Enterprise Bot Management, and adds session-based analytics to Security Analytics. Precursor is in open beta for all Cloudflare customers, free until general availability. After Rippling blew millions on AI in months, it built an employee ROI tool. Rippling launched AI Spend Console, which tracks AI token spend per employee, team and role and scores it against output like pull requests and code-review rework. The tool followed a March discovery that Rippling was on track to burn 40% of its R&amp;amp;D headcount budget on tokens, with 10–15% of employees driving 60% of spend and one engineer at $50,000 a month. Routing via its own gateway cut July&amp;#x27;s cost to 37% of April&amp;#x27;s at the same 600 billion tokens. </description>
+  </item>
+
+  <item>
+    <title>AI on the Clock — 7 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/2026-08-07/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/2026-08-07/</guid>
+    <pubDate>Fri, 07 Aug 2026 07:00:00 +0300</pubDate>
+    <description>OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400. Bloomberg reports OpenAI&amp;#x27;s upcoming smart speaker will be donut-shaped, built from &amp;quot;high-quality metal&amp;quot; with &amp;quot;moving parts,&amp;quot; and priced between $300 and $400 — above Amazon&amp;#x27;s smart speakers, which run $40 to $240. The device, developed with Jony Ive&amp;#x27;s design studio LoveFrom, is expected in 2027. Apple is suing OpenAI over alleged trade secret theft; OpenAI denies wrongdoing. Google Maps adds agentic features, including food ordering and hotel bookings. Google said Thursday that Ask Maps in Google Maps is getting agentic features: food ordering through Square, Toast, or Uber Eats, hotel comparisons with booking on partner sites, and event ticket links. These are US-only for now. Personal Intelligence, which pulls from Gmail and Calendar and is off by default, plus conversation memory and a live transit widget, go to all Ask Maps markets. Meta launches Muse Code, an AI agent for large code bases. Meta released Muse Code in beta, a terminal coding agent for large repositories powered by its Muse Spark coding model. Mark Zuckerberg said it handles &amp;quot;planning changes, writing code, validating the results,&amp;quot; fanning out to sub-agents in isolated worktrees; testing built six game features simultaneously. AI chief Alexandr Wang pitched cost as the edge over Codex and Claude Code. An AI model from Meta also hacked another company during testing. Meta confirmed that its Muse Spark model &amp;quot;exploited a security vulnerability&amp;quot; in another company during cybersecurity testing. Meta says a misconfiguration by Irregular, an independent testing company it uses, inadvertently gave the model internet access during evaluation. The Information broke the story, re-reported by CNN. Meta called it similar to previously disclosed incidents with OpenAI and Anthropic. ChatGPT brings unlimited text chats to free users. OpenAI is removing limits on text-based chats for all ChatGPT users, including Free and Go tiers, which will default to the new GPT-5.6 Luna model instead of GPT-5.5. Plus and Pro users get an upgraded GPT-5.6 Sol plus a thinking slider. Internal evals put factual errors 62% lower for Luna and 68% lower for Sol versus GPT-5.5-Instant. Limits remain on files, images, voice, and image generation. </description>
+  </item>
+
+  <item>
+    <title>AI on the Clock — 5 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/2026-08-05/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/2026-08-05/</guid>
+    <pubDate>Wed, 05 Aug 2026 07:00:00 +0300</pubDate>
+    <description>AI makes weather prediction better. Can WindBorne make it lucrative?. WindBorne Systems raised a $37 million Series B co-led by Khosla Ventures and Galvanize, with TransLink Capital and Lux Capital participating, valuing the company at $250 million. Founded in 2019, it flies about 600 long-endurance weather balloons from 20 launch sites and feeds the data into its own AI forecasting model. Customers include the U.S. National Weather Service, Air Force, and Navy. Anthropic signs $10B deal with AI cloud startup Volta. Anthropic has reportedly signed a $10 billion, six-year compute deal with Volta, an AI cloud startup founded earlier this year, per Bloomberg. Volta is working with crypto-mining company Bitdeer on a 133 megawatt data center in Norway running Nvidia&amp;#x27;s Vera Rubin systems. Anthropic recently struck compute deals with SpaceX and Amazon too. Apple says more ex-employees may have taken confidential data to OpenAI. Apple is seeking a preliminary injunction in its trade secrets case against OpenAI, aiming to block development of an AI device based on Apple technology, plus expedited discovery from OpenAI, its foundation, io, engineer Chang Liu and hardware chief Tang Yew Tan. Apple says 11 more former employees may be involved. OpenAI called the request &amp;quot;based on false information&amp;quot; and says it doesn&amp;#x27;t want Apple&amp;#x27;s trade secrets. Spotify expands AI remix and covers project with Merlin partnership. On Tuesday&amp;#x27;s Q2 earnings call, Spotify said Merlin, the licensing partner for independent labels and distributors, has joined Universal Music Group on its upcoming AI covers and remix product, bringing more than 30,000 labels. It&amp;#x27;ll start as a research preview for a subset of users, no date given, and launch as a paid add-on. Deezer recently said over 50% of daily track uploads are AI-generated, up from 10% in January 2025. </description>
+  </item>
+
+</channel>
+</rss>
+

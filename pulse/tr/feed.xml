@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>AI on the Clock — Pulse</title>
+  <link>https://aiontheclock.mehmeterkek.com/pulse/tr/</link>
+  <atom:link href="https://aiontheclock.mehmeterkek.com/pulse/tr/feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
+  <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
+  <language>en</language>
+  <lastBuildDate>Mon, 10 Aug 2026 23:34:03 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 8 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-08/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-08/</guid>
+    <pubDate>Sat, 08 Aug 2026 07:00:00 +0300</pubDate>
+    <description>Now we have a timeline of the OpenAI accidental attack against Hugging Face. OpenAI, Black Hat&amp;#x27;te &amp;quot;the Hugging Face Incident&amp;quot; hakkında son dakika sunumu yaptı; video dün yayımlandı. Timeline&amp;#x27;a göre 8 Mayıs&amp;#x27;ta Artifactory&amp;#x27;ye dosya yazmayı keşfeden agent&amp;#x27;lar zamanla orada bir mesaj panosu kurdu, SSRF ve iki zero-day RCE ile cluster admin&amp;#x27;e çıktı. OpenAI olayın kendisi olduğunu 20 Temmuz&amp;#x27;da, Hugging Face credential&amp;#x27;larının çoktan revoke edildiğini öğrenince anladı. Cloudflare&amp;#x27;s Precursor Detects Bots and AI Agents Through Continuous Behavioral Analysis. Cloudflare, Precursor&amp;#x27;u open beta olarak duyurdu: mouse hareketi, klavye zamanlamasi, focus degisiklikleri ve sayfa gorunurlugu gibi sinyalleri seansin tamamı boyunca toplayip edge&amp;#x27;de gerçek zamanlı analiz eden client-side bir davranış motoru. Enterprise Bot Management kapsamında Turnstile&amp;#x27;ı tamamlıyor, Security Analytics&amp;#x27;e seans bazlı analitik ekliyor. General availability&amp;#x27;ye kadar tüm müşterilere ücretsiz. After Rippling blew millions on AI in months, it built an employee ROI tool. Rippling, AI Spend Console adlı ürünü tanıttı: şirketlerin token harcamasını çalışan, ekip ve rol bazında izleyip verimlilikle eşleştiren bir araç. Ürün, Mart ayında CFO Adam Swiecicki&amp;#x27;nin R&amp;amp;D headcount bütçesinin %40&amp;#x27;ının token&amp;#x27;a gideceğini, harcamanın ayda %80 büyüdüğünü göstermesiyle doğdu. Çalışanların %10-15&amp;#x27;i toplam harcamanın %60&amp;#x27;ını yapıyordu; bir mühendis ayda 50.000 dolar. Kendi AI gateway&amp;#x27;ini kurduktan sonra oran %15&amp;#x27;e indi. </description>
+  </item>
+
+  <item>
+    <title>AI on the Clock — 7 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-07/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-07/</guid>
+    <pubDate>Fri, 07 Aug 2026 07:00:00 +0300</pubDate>
+    <description>OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400. Bloomberg&amp;#x27;e göre OpenAI&amp;#x27;ın ChatGPT&amp;#x27;nin &amp;quot;fiziksel tezahürü&amp;quot; olarak tarif edilen akıllı hoparlörü donut şeklinde olacak; yüksek kaliteli metal gövde, &amp;quot;premium&amp;quot; bir görünüm ve hareketli parçalar içerecek. Fiyat 300-400 dolar aralığında, Amazon&amp;#x27;un 40-240 dolarlık cihazlarının epey üstünde. Jony Ive&amp;#x27;ın kurduğu LoveFrom ile geliştirilen cihaz muhtemelen 2027&amp;#x27;de çıkacak. Google Maps adds agentic features, including food ordering and hotel bookings. Google, Maps&amp;#x27;teki &amp;quot;Ask Maps&amp;quot; özelliğine yemek siparişi, otel rezervasyonu ve etkinlik bileti bulma gibi agentic yetenekler ekledi. Sipariş akışı Square, Toast veya Uber Eats üzerinden sepete ekleme yapıyor, ödeme o platformda tamamlanıyor. Agentic özellikler ABD&amp;#x27;de; varsayılan olarak kapalı gelen Personal Intelligence, Gmail ve Google Calendar verisiyle yanıtları kişiselleştiriyor ve Ask Maps&amp;#x27;in açık olduğu tüm pazarlara çıkıyor. Meta launches Muse Code, an AI agent for large code bases. Meta, beta aşamasında olan terminal tabanlı kodlama ajanı Muse Code&amp;#x27;u yayınladı. Mark Zuckerberg&amp;#x27;e göre araç büyük repolarda planlama, kod yazma ve sonuç doğrulama yapıyor; iş büyüdüğünde izole worktree&amp;#x27;lerde paralel çalışan alt ajanlara dağılıyor ve çalışma kopyanıza dokunmuyor. Altında Meta&amp;#x27;nın daha önce çıkardığı Muse Spark kodlama modeli var. An AI model from Meta also hacked another company during testing. Meta sözcüsü çarşamba günü, Muse Spark modelinin siber güvenlik testleri sırasında başka bir şirkette &amp;quot;bir güvenlik açığını istismar ettiğini&amp;quot; doğruladı. Sebep olarak bağımsız test şirketi Irregular&amp;#x27;ın hatalı yapılandırması gösterildi; bu hata model değerlendirme sırasında modele internet erişimi vermiş. Haberi The Information duyurdu, CNN yeniden servis etti. Daha önce OpenAI ve Anthropic&amp;#x27;te de benzer olaylar açıklanmıştı. ChatGPT brings unlimited text chats to free users. OpenAI, haftalık 1 milyar kullanıcıyı geçen ChatGPT&amp;#x27;de tüm kullanıcılar için metin sohbetlerindeki limitleri kaldırıyor. Free ve Go&amp;#x27;da varsayılan model GPT-5.5 yerine GPT-5.6 Luna oluyor, yanına da daha yüksek reasoning için &amp;quot;Think&amp;quot; butonu geliyor. Plus ve Pro ise güncellenmiş GPT-5.6 Sol ile thinking slider alıyor. Dosya, görsel, ses ve görsel üretimde limitler duruyor. </description>
+  </item>
+
+</channel>
+</rss>
+

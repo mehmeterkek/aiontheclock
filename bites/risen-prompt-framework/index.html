@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>The RISEN Framework: A Repeatable Way to Write Prompts | AI on the Clock</title>
+<meta name="description" content="Role, Instructions, Steps, End goal, Narrowing — five slots that turn prompting from guesswork into something you can hand to a colleague." />
+<link rel="canonical" href="https://aiontheclock.mehmeterkek.com/bites/risen-prompt-framework/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aiontheclock.mehmeterkek.com/bites/risen-prompt-framework/" />
+<meta property="og:title" content="The RISEN Framework: A Repeatable Way to Write Prompts" />
+<meta property="og:description" content="Role, Instructions, Steps, End goal, Narrowing — five slots that turn prompting from guesswork into something you can hand to a colleague." />
+<meta property="og:site_name" content="Mehmet Erkek" />
+
+
+<meta property="og:image" content="https://aiontheclock.mehmeterkek.com/assets/risen-prompt-framework/cover.webp" />
+<meta name="twitter:image" content="https://aiontheclock.mehmeterkek.com/assets/risen-prompt-framework/cover.webp" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mehmeterkek" />
+
+
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Pulse (English)" href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Bites" href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" />
+<link rel="icon" href="data:,">
+
+<link rel="stylesheet" href="../../style.css">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The RISEN Framework: A Repeatable Way to Write Prompts",
+  "description": "Role, Instructions, Steps, End goal, Narrowing — five slots that turn prompting from guesswork into something you can hand to a colleague.",
+  "datePublished": "2026-07-28",
+  "author": { "@type": "Person", "name": "Mehmet Erkek" },
+  "image": "https://aiontheclock.mehmeterkek.com/assets/risen-prompt-framework/cover.webp",
+  "mainEntityOfPage": "https://aiontheclock.mehmeterkek.com/bites/risen-prompt-framework/"
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-443JW7SSTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-443JW7SSTF');
+</script>
+
+<style>
+  .digest { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .digest .kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
+                    color: var(--accent); font-weight: 600; margin: 0 0 .5rem; }
+  .digest h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  .digest .dateline { color: var(--text-muted); font-size: .9rem; margin: 0 0 2.5rem; }
+  .digest .intro { color: var(--text-muted); border-left: 2px solid var(--border);
+                   padding-left: 1rem; margin: 0 0 2.8rem; }
+
+  .story { padding-left: 2.4rem; position: relative; margin-bottom: 2.8rem; }
+  .story .n { position: absolute; left: 0; top: .2rem; font-size: .8rem; font-weight: 700;
+              color: var(--gold); font-variant-numeric: tabular-nums; }
+  .story h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 .3rem; }
+  .story h2 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .story h2 a:hover { color: var(--accent); border-color: var(--accent); }
+  .story .source { font-size: .74rem; text-transform: uppercase; letter-spacing: .08em;
+                   color: var(--gold); margin-bottom: .8rem; }
+  .story .source a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+  .story .source a:hover { border-color: currentColor; }
+  .story .source .by { text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+  .story .source .by::before { content: "· "; }
+  .story .credit { margin: .7rem 0 0; font-size: .82rem; }
+  .story .credit a { color: var(--text-muted); text-decoration: none; }
+  .story .credit a:hover { color: var(--accent); }
+
+  .story .brief { margin: 0 0 1rem; }
+  .story .why { margin: 0; background: var(--surface); border: 1px solid var(--border);
+                border-radius: 10px; padding: 1rem 1.15rem; }
+  .story .why b { display: block; font-size: .68rem; text-transform: uppercase;
+                  letter-spacing: .1em; color: var(--text-muted); margin-bottom: .4rem; }
+
+  .archive { list-style: none; padding: 0; margin: 2rem 0 0; }
+  .archive li { border-top: 1px solid var(--border); padding: 1.1rem 0; }
+  .archive a.day { font-size: 1.05rem; font-weight: 600; color: var(--text); text-decoration: none; }
+  .archive a.day:hover { color: var(--accent); }
+  .archive .titles { color: var(--text-muted); font-size: .88rem; margin: .35rem 0 0; }
+
+  .digest footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.2rem;
+                   font-size: .82rem; color: var(--text-muted); }
+  .digest footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+
+<div class="bg-fx"></div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="../../">AI on the Clock</a>
+    <span class="spacer"></span>
+    <a class="back" href="https://www.mehmeterkek.com">mehmeterkek.com</a>
+  </div>
+</header>
+
+<main class="digest">
+  
+  
+  <nav class="aiotc-nav">
+    <a class="tab " href="../../pulse/">Pulse</a>
+    <a class="tab on" href="../../bites/">Bites</a>
+    <span class="blurb">Explainers and carousels, twice a week.</span>
+    
+  </nav>
+  
+
+
+<article class="aiotc-article">
+  <p class="aiotc-kicker">Nº 001 · <b>PROMPTING</b> · 28 July 2026</p>
+  <h1>The RISEN Framework: A Repeatable Way to Write Prompts</h1>
+  <p class="aiotc-standfirst">Role, Instructions, Steps, End goal, Narrowing — five slots that turn prompting from guesswork into something you can hand to a colleague.</p>
+
+  <div class="aiotc-slides">
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/cover.webp" alt="Cover slide: RISEN — turn vague requests into precise outputs, in five building blocks." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/02.webp" alt="Garbage in, garbage out. A vague ask gets a generic answer; RISEN stands for Role, Instructions, Steps, End goal, Narrowing." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/03.webp" alt="R — Role: tell the AI who it is. Example prompt: “You are a senior B2B copywriter with 10 years in SaaS.”" width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/04.webp" alt="I — Instructions: tell it exactly what to do. One clear task beats five vague ones." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/05.webp" alt="S — Steps: give it the path, not just the destination. An ordered path keeps the output structured." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/06.webp" alt="E — End goal: define what success looks like. The model optimizes for whatever you name as the goal." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/07.webp" alt="N — Narrowing: set the boundaries. Constraints are what kill generic output." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/risen-prompt-framework/08.webp" alt="The full prompt, with all five RISEN parts filled in as one worked example." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+  </div>
+
+  <p class="aiotc-download">
+    <a href="../../assets/risen-prompt-framework/risen-prompt-framework.pdf" download>Download the deck (PDF, 8 pages)</a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7487779330844987392/" target="_blank" rel="noopener">Read the original on LinkedIn</a>
+  </p>
+
+  <div class="aiotc-body"><p>Most prompts fail before the AI even starts. A vague ask gets a generic answer — every time. The model is not the problem; the request is.</p>
+<p>RISEN fixes that with five building blocks. Fill all five and you stop negotiating with the output.</p>
+<h2>R — Role: tell the AI who it is</h2>
+<p>The role sets the knowledge, tone and standards the model draws from. No role, no point of view.</p>
+<p>“You are a senior B2B copywriter with 10 years in SaaS.”</p>
+<h2>I — Instructions: tell it exactly what to do</h2>
+<p>One clear task beats five vague ones.</p>
+<p>“Write a 150-word LinkedIn post announcing our new analytics feature.”</p>
+<h2>S — Steps: give it the path, not just the destination</h2>
+<p>An ordered path keeps the output structured and on track.</p>
+<p>“Structure: 1) Hook 2) Problem 3) Solution 4) CTA”</p>
+<h2>E — End goal: define what success looks like</h2>
+<p>The model optimizes for whatever you name as the goal. Name it.</p>
+<p>“Goal: make a non-technical founder want to book a demo.”</p>
+<h2>N — Narrowing: set the boundaries</h2>
+<p>Constraints are what kill generic output.</p>
+<p>“No jargon. No emojis. Max 2 sentences per paragraph. Don't mention pricing.”</p>
+<h2>Why it works</h2>
+<p>I have watched this single framework turn “write me something about our product” people into “here's exactly what I need” people. The framework is not the clever part — writing the five lines down is. Once they are written, the prompt is something you can hand to a colleague.</p>
+<p>The letter most people skip is N. It shows.</p></div>
+
+  <nav class="aiotc-pager">
+    
+    <a href="../ai-strategy-questions/" class="next"><span>Next</span>5 Hard Questions About Your AI Strategy</a>
+  </nav>
+</article>
+
+
+  
+  
+  <aside class="aiotc-cta">
+    <h2>Where does your company actually stand on AI?</h2>
+    <p>A free scan across six areas — strategy, data, applications, skills, risk and measurement. About four minutes, and you get the two things to fix first as a PDF.</p>
+    <a href="https://www.mehmeterkek.com/ai-maturity-report.html" class="btn btn-primary">Take the scan <span class="arrow">&rarr;</span></a>
+  </aside>
+  
+
+  <footer>
+    <p>
+      One idea per post, explained properly. Written by hand, no schedule to keep.
+    </p>
+    <p>
+      Pulse feed: <a href="../../pulse/feed.xml">RSS</a> ·
+      Bites feed: <a href="../../bites/feed.xml">RSS</a>
+    </p>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Written by <a href="https://www.mehmeterkek.com">Mehmet Erkek</a>.</p>
+    <p>Pulse is assembled with a model and edited by hand. Bites are written by hand.</p>
+  </div>
+</footer>
+
+<!-- Digital twin chat widget — its own Cloud Run service, see repos/my-digital-twin -->
+<script src="https://my-digital-twin-625021277379.europe-west3.run.app/twin-widget.js"
+        data-endpoint="https://my-digital-twin-625021277379.europe-west3.run.app"
+        data-name="Mehmet Erkek"
+        data-title="AI Leader &amp; Technology Executive"
+        defer></script>
+</body>
+</html>

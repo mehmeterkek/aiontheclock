@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>What Is MCP (Model Context Protocol)? A Plain-English Guide | AI on the Clock</title>
+<meta name="description" content="Model Context Protocol is an open standard for how AI applications connect to tools and data — the USB-C port for AI. What it is, where it came from, and why it became infrastructure in eighteen months." />
+<link rel="canonical" href="https://aiontheclock.mehmeterkek.com/bites/mcp-explained/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aiontheclock.mehmeterkek.com/bites/mcp-explained/" />
+<meta property="og:title" content="What Is MCP (Model Context Protocol)? A Plain-English Guide" />
+<meta property="og:description" content="Model Context Protocol is an open standard for how AI applications connect to tools and data — the USB-C port for AI. What it is, where it came from, and why it became infrastructure in eighteen months." />
+<meta property="og:site_name" content="Mehmet Erkek" />
+
+
+<meta property="og:image" content="https://aiontheclock.mehmeterkek.com/assets/mcp-explained/cover.webp" />
+<meta name="twitter:image" content="https://aiontheclock.mehmeterkek.com/assets/mcp-explained/cover.webp" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mehmeterkek" />
+
+
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Pulse (English)" href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Bites" href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" />
+<link rel="icon" href="data:,">
+
+<link rel="stylesheet" href="../../style.css">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Is MCP (Model Context Protocol)? A Plain\u002DEnglish Guide",
+  "description": "Model Context Protocol is an open standard for how AI applications connect to tools and data — the USB\u002DC port for AI. What it is, where it came from, and why it became infrastructure in eighteen months.",
+  "datePublished": "2026-08-04",
+  "author": { "@type": "Person", "name": "Mehmet Erkek" },
+  "image": "https://aiontheclock.mehmeterkek.com/assets/mcp-explained/cover.webp",
+  "mainEntityOfPage": "https://aiontheclock.mehmeterkek.com/bites/mcp-explained/"
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-443JW7SSTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-443JW7SSTF');
+</script>
+
+<style>
+  .digest { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .digest .kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
+                    color: var(--accent); font-weight: 600; margin: 0 0 .5rem; }
+  .digest h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  .digest .dateline { color: var(--text-muted); font-size: .9rem; margin: 0 0 2.5rem; }
+  .digest .intro { color: var(--text-muted); border-left: 2px solid var(--border);
+                   padding-left: 1rem; margin: 0 0 2.8rem; }
+
+  .story { padding-left: 2.4rem; position: relative; margin-bottom: 2.8rem; }
+  .story .n { position: absolute; left: 0; top: .2rem; font-size: .8rem; font-weight: 700;
+              color: var(--gold); font-variant-numeric: tabular-nums; }
+  .story h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 .3rem; }
+  .story h2 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .story h2 a:hover { color: var(--accent); border-color: var(--accent); }
+  .story .source { font-size: .74rem; text-transform: uppercase; letter-spacing: .08em;
+                   color: var(--gold); margin-bottom: .8rem; }
+  .story .source a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+  .story .source a:hover { border-color: currentColor; }
+  .story .source .by { text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+  .story .source .by::before { content: "· "; }
+  .story .credit { margin: .7rem 0 0; font-size: .82rem; }
+  .story .credit a { color: var(--text-muted); text-decoration: none; }
+  .story .credit a:hover { color: var(--accent); }
+
+  .story .brief { margin: 0 0 1rem; }
+  .story .why { margin: 0; background: var(--surface); border: 1px solid var(--border);
+                border-radius: 10px; padding: 1rem 1.15rem; }
+  .story .why b { display: block; font-size: .68rem; text-transform: uppercase;
+                  letter-spacing: .1em; color: var(--text-muted); margin-bottom: .4rem; }
+
+  .archive { list-style: none; padding: 0; margin: 2rem 0 0; }
+  .archive li { border-top: 1px solid var(--border); padding: 1.1rem 0; }
+  .archive a.day { font-size: 1.05rem; font-weight: 600; color: var(--text); text-decoration: none; }
+  .archive a.day:hover { color: var(--accent); }
+  .archive .titles { color: var(--text-muted); font-size: .88rem; margin: .35rem 0 0; }
+
+  .digest footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.2rem;
+                   font-size: .82rem; color: var(--text-muted); }
+  .digest footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+
+<div class="bg-fx"></div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="../../">AI on the Clock</a>
+    <span class="spacer"></span>
+    <a class="back" href="https://www.mehmeterkek.com">mehmeterkek.com</a>
+  </div>
+</header>
+
+<main class="digest">
+  
+  
+  <nav class="aiotc-nav">
+    <a class="tab " href="../../pulse/">Pulse</a>
+    <a class="tab on" href="../../bites/">Bites</a>
+    <span class="blurb">Explainers and carousels, twice a week.</span>
+    
+  </nav>
+  
+
+
+<article class="aiotc-article">
+  <p class="aiotc-kicker">Nº 003 · <b>INFRASTRUCTURE</b> · 4 August 2026</p>
+  <h1>What Is MCP (Model Context Protocol)? A Plain-English Guide</h1>
+  <p class="aiotc-standfirst">Model Context Protocol is an open standard for how AI applications connect to tools and data — the USB-C port for AI. What it is, where it came from, and why it became infrastructure in eighteen months.</p>
+
+  <div class="aiotc-slides">
+    
+      <figure>
+        <img src="../../assets/mcp-explained/cover.webp" alt="Cover slide: MCP — what it is, where it came from, and why it became infrastructure." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/mcp-explained/02.webp" alt="What it is: the USB-C port for AI. Model Context Protocol is an open standard for how AI applications connect to tools and data — one plug instead of a different cable for every pair." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/mcp-explained/03.webp" alt="Where it came from: Anthropic open-sourced MCP in Nov 2024; supported across OpenAI, Google, Microsoft and AWS in 2025; donated to the Agentic AI Foundation in Dec 2025; a stateless core shipped Jul 2026." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/mcp-explained/04.webp" alt="Why it matters: integration was the bottleneck, not intelligence. Build once, connect everywhere — swap the model without rewriting every integration." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/mcp-explained/05.webp" alt="How it works: a host such as Claude, your IDE or an agent runs an MCP client, which speaks the protocol to MCP servers sitting in front of Slack, Postgres, GitHub or your own API." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/mcp-explained/06.webp" alt="What a server exposes: tools (actions the model can take), resources (data it can read) and prompts (reusable templates it can call). Clients discover all three at connect time." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/mcp-explained/07.webp" alt="State of play: ~500M monthly SDK downloads, 10,000+ public servers, ~28% of the Fortune 500, 41% of surveyed software organizations running it in production." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/mcp-explained/08.webp" alt="The boring layer is the important one. If you build, expose your system once properly. If you lead, ask vendors whether they have an MCP server." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+  </div>
+
+  <p class="aiotc-download">
+    <a href="../../assets/mcp-explained/mcp-explained.pdf" download>Download the deck (PDF, 8 pages)</a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7490233541662760960/" target="_blank" rel="noopener">Read the original on LinkedIn</a>
+  </p>
+
+  <div class="aiotc-body"><p>The most consequential development in AI architecture over the past couple of years was not a brighter model. It was a boring standard nobody was talking about — and in eighteen months it went from experiment to infrastructure.</p>
+<h2>What it is</h2>
+<p>Model Context Protocol is an open standard for how AI applications connect to tools and data. People call it the USB-C port for AI: one plug, instead of a different cable for every pair.</p>
+<h2>Where it came from</h2>
+<ul>
+<li><strong>Nov 2024</strong> — Anthropic open-sources it</li>
+<li><strong>2025</strong> — supported across OpenAI, Google, Microsoft and AWS</li>
+<li><strong>Dec 2025</strong> — donated to the Agentic AI Foundation under the Linux Foundation</li>
+<li><strong>Jul 2026</strong> — the new spec ships a stateless core</li>
+</ul>
+<p>From one vendor's idea to neutral infrastructure in eighteen months.</p>
+<h2>Why it matters</h2>
+<p>Before MCP, every AI application needed a custom connector for every system. In most organizations that quickly becomes hundreds of bespoke integrations. Integration — not intelligence — was the bottleneck.</p>
+<p>There is a second benefit leaders often miss: MCP decouples models from systems. You can change the model without rewriting every integration.</p>
+<h2>How it works</h2>
+<p>A host — Claude, your IDE, an agent — runs an MCP client. That client connects to MCP servers, which sit in front of your systems: Slack, Postgres, GitHub, your internal API.</p>
+<p>Each server exposes three things:</p>
+<ul>
+<li><strong>Tools</strong> — actions the model can take</li>
+<li><strong>Resources</strong> — data it can read</li>
+<li><strong>Prompts</strong> — reusable templates it can call</li>
+</ul>
+<p>Clients discover them at connect time — nothing hardcoded. It runs on JSON-RPC: locally over stdio, remotely over HTTP, with remote deployments typically secured using OAuth 2.1.</p>
+<h2>Where the world is</h2>
+<ul>
+<li>~500M monthly downloads across the Tier 1 SDKs <em>(official, July 2026)</em></li>
+<li>10,000+ public servers</li>
+<li>~28% of the Fortune 500 running servers <em>(industry reports)</em></li>
+<li>41% of surveyed software organizations using it in production <em>(2026 industry survey)</em></li>
+</ul>
+<p>Only the first two are official project numbers — adoption estimates vary by source. The direction does not.</p>
+<p>The July 2026 spec was the biggest release yet: MCP dropped sessions and the initialize handshake entirely. Every request is now self-describing, so any call can land on any server instance behind a plain load balancer. Agent infrastructure finally scales like the rest of the web.</p>
+<h2>What to do</h2>
+<ul>
+<li><strong>If you build:</strong> stop writing bespoke connectors. Expose your system once, properly.</li>
+<li><strong>If you lead:</strong> ask every vendor one question — “Do you have an MCP server?” Their answer tells you how future-proof they are.</li>
+</ul>
+<p>Standards don't trend. They quietly decide what's possible.</p></div>
+
+  <nav class="aiotc-pager">
+    <a href="../ai-strategy-questions/" class="prev"><span>Previous</span>5 Hard Questions About Your AI Strategy</a>
+    <a href="../shadow-ai/" class="next"><span>Next</span>What Is Shadow AI? Why Banning AI Tools Makes the Risk Worse</a>
+  </nav>
+</article>
+
+
+  
+  
+  <aside class="aiotc-cta">
+    <h2>Where does your company actually stand on AI?</h2>
+    <p>A free scan across six areas — strategy, data, applications, skills, risk and measurement. About four minutes, and you get the two things to fix first as a PDF.</p>
+    <a href="https://www.mehmeterkek.com/ai-maturity-report.html" class="btn btn-primary">Take the scan <span class="arrow">&rarr;</span></a>
+  </aside>
+  
+
+  <footer>
+    <p>
+      One idea per post, explained properly. Written by hand, no schedule to keep.
+    </p>
+    <p>
+      Pulse feed: <a href="../../pulse/feed.xml">RSS</a> ·
+      Bites feed: <a href="../../bites/feed.xml">RSS</a>
+    </p>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Written by <a href="https://www.mehmeterkek.com">Mehmet Erkek</a>.</p>
+    <p>Pulse is assembled with a model and edited by hand. Bites are written by hand.</p>
+  </div>
+</footer>
+
+<!-- Digital twin chat widget — its own Cloud Run service, see repos/my-digital-twin -->
+<script src="https://my-digital-twin-625021277379.europe-west3.run.app/twin-widget.js"
+        data-endpoint="https://my-digital-twin-625021277379.europe-west3.run.app"
+        data-name="Mehmet Erkek"
+        data-title="AI Leader &amp; Technology Executive"
+        defer></script>
+</body>
+</html>
