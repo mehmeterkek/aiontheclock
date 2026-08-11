@@ -41,7 +41,26 @@
   .half .go { display: flex; gap: .9rem; align-items: baseline; font-size: .85rem; }
   .half .go a { text-decoration: none; }
   .half .go .rss { color: var(--text-muted); }
-  .digest .lede { color: var(--text-muted); font-size: 1.05rem; margin: 0 0 3rem; }
+  .digest .lede { color: var(--text-muted); font-size: 1.05rem; margin: 0 0 2.6rem; }
+
+  .hero-mark { display: block; margin: 0 0 1.4rem; }
+
+  .latest { margin: 3rem 0 0; }
+  .latest h2 { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
+               color: var(--text-muted); margin: 0 0 .9rem; font-weight: 600; }
+  .latest .item { border-top: 1px solid var(--border); padding: 1.2rem 0 0; }
+  .latest .when { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em;
+                  color: var(--gold); margin: 0 0 .35rem; }
+  .latest .item h3 { margin: 0 0 .5rem; font-size: 1.1rem; line-height: 1.35; }
+  .latest .item h3 a { color: var(--text); text-decoration: none; }
+  .latest .item h3 a:hover { color: var(--accent); }
+  .latest ul { list-style: none; margin: 0; padding: 0; color: var(--text-muted); font-size: .9rem; }
+  .latest ul li { padding: .22rem 0 .22rem 1rem; position: relative; line-height: 1.45; }
+  .latest ul li::before { content: "·"; position: absolute; left: .2rem; color: var(--gold); }
+  .latest .with-cover { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.1rem; align-items: start; }
+  @media (max-width: 520px) { .latest .with-cover { grid-template-columns: 1fr; } }
+  .latest .with-cover img { width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; }
+  .latest p.summary { color: var(--text-muted); font-size: .9rem; margin: 0; line-height: 1.55; }
 </style>
 
 
@@ -102,17 +121,40 @@
 
 <header class="masthead">
   <div class="masthead-inner">
-    <a class="wordmark" href="./">AI on the Clock</a>
+    
+    <a class="wordmark" href="./">
+      <svg class="mark" viewBox="0 0 40 40" width="26" height="26" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".55"/>
+        <text x="20" y="24.5" text-anchor="middle" font-size="11.5"
+              font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+              fill="currentColor" letter-spacing="-.3">0:00</text>
+      </svg>
+      <span>AI on the Clock</span>
+    </a>
+
+    <nav class="masthead-nav">
+      <a href="./" class="on">Home</a>
+      <a href="pulse/" >Pulse</a>
+      <a href="bites/" >Bites</a>
+    </nav>
+
     <span class="spacer"></span>
+
+    
+    
     <a class="back" href="https://www.mehmeterkek.com">mehmeterkek.com</a>
   </div>
 </header>
 
 <main class="digest">
-  
-  
 
 
+<svg class="hero-mark" viewBox="0 0 40 40" width="52" height="52" aria-hidden="true" focusable="false">
+  <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+  <text x="20" y="24.5" text-anchor="middle" font-size="11.5"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        fill="currentColor" letter-spacing="-.3">0:00</text>
+</svg>
 <p class="kicker">Mehmet Erkek</p>
 <h1>AI on the Clock</h1>
 <p class="lede">Two halves under one masthead, on separate clocks and separate feeds. Take one, take both.</p>
@@ -138,6 +180,58 @@
     </p>
   </section>
 </div>
+
+
+
+<section class="latest">
+  <h2>Latest</h2>
+
+  
+    <div class="item">
+      <p class="when">Pulse · 11 August 2026</p>
+      <h3><a href="pulse/2026-08-11/">Today’s five</a></h3>
+      <ul>
+        <li>Four takeaways from Mark Zuckerberg’s massive AI manifesto</li><li>The Rise of the 1 am Job Interview</li><li>The AI safety test is becoming a safety risk</li>
+      </ul>
+    </div>
+  
+
+  
+    <div class="item">
+      <p class="when">Bites · Nº 005 · 11 August 2026</p>
+      <div class="with-cover">
+        <a href="bites/harness-engineering/"><img src="assets/harness-engineering/cover.webp" alt="" width="1080" height="1350" loading="lazy"></a>
+        <div>
+          <h3><a href="bites/harness-engineering/">What is Harness in AI</a></h3>
+          <p class="summary">Everyone is debating: “Which model is better?”
+
+But the same model can go from 38% to 66% success when you change the system around it.
+
+The difference isn’t the model — it’s the scaffolding built around it.
+
+It’s called the harness. 👇
+
+—
+
+Agent = Model + Harness
+
+The model is the brain: it reads context and makes decisions.
+
+The harness is everything around it — tools, sandbox, memory, verification, guardrails, logging, and execution.
+
+A raw model can’t write a file, run your tests, remember what happened last week, or recover from a crash.
+
+All of that comes from what’s built around it.
+
+As LangChain’s Vivek Trivedy put it:
+
+“If you’re not the model, you’re the harness.”</p>
+        </div>
+      </div>
+    </div>
+  
+</section>
+
 
 
   

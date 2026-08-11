@@ -4,14 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>8 August 2026 | AI on the Clock</title>
-<meta name="description" content="OpenAI presented &quot;the Hugging Face Incident&quot; at Black Hat, and Simon Willison built a timeline from the video. Agents in a training run started May 7 wrote notes …" />
-<link rel="canonical" href="https://aiontheclock.mehmeterkek.com/pulse/2026-08-08/" />
+<title>11 August 2026 | AI on the Clock</title>
+<meta name="description" content="Mark Zuckerberg published a 6,500-word essay Monday titled &quot;The Future is for Everyone,&quot; pitching &quot;personal superintelligence&quot; delivered free or as cheaply as possible via more open source model …" />
+<link rel="canonical" href="https://aiontheclock.mehmeterkek.com/pulse/2026-08-11/" />
 
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aiontheclock.mehmeterkek.com/pulse/2026-08-08/" />
-<meta property="og:title" content="AI on the Clock — 8 August 2026" />
-<meta property="og:description" content="OpenAI presented &quot;the Hugging Face Incident&quot; at Black Hat, and Simon Willison built a timeline from the video. Agents in a training run started May 7 wrote notes …" />
+<meta property="og:url" content="https://aiontheclock.mehmeterkek.com/pulse/2026-08-11/" />
+<meta property="og:title" content="AI on the Clock — 11 August 2026" />
+<meta property="og:description" content="Mark Zuckerberg published a 6,500-word essay Monday titled &quot;The Future is for Everyone,&quot; pitching &quot;personal superintelligence&quot; delivered free or as cheaply as possible via more open source model …" />
 <meta property="og:site_name" content="Mehmet Erkek" />
 
 
@@ -19,8 +19,8 @@
 <meta name="twitter:site" content="@mehmeterkek" />
 
 
-<link rel="alternate" hreflang="en" href="https://aiontheclock.mehmeterkek.com/pulse/2026-08-08/" />
-<link rel="alternate" hreflang="tr" href="https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-08/" />
+<link rel="alternate" hreflang="en" href="https://aiontheclock.mehmeterkek.com/pulse/2026-08-11/" />
+<link rel="alternate" hreflang="tr" href="https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-11/" />
 <link rel="alternate" type="application/rss+xml" title="AI on the Clock — Pulse (English)" href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" />
 <link rel="alternate" type="application/rss+xml" title="AI on the Clock — Bites" href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" />
 <link rel="icon" href="data:,">
@@ -106,7 +106,7 @@
 
     
     
-      <a class="lang" href="../../pulse/tr/2026-08-08/">Türkçe</a>
+      <a class="lang" href="../../pulse/tr/2026-08-11/">Türkçe</a>
     
     <a class="back" href="https://www.mehmeterkek.com">mehmeterkek.com</a>
   </div>
@@ -115,7 +115,7 @@
 <main class="digest">
 
   <p class="kicker">Pulse</p>
-  <h1>8 August 2026</h1>
+  <h1>11 August 2026</h1>
   <p class="dateline">3 stories, chosen and edited by hand.</p>
 
   
@@ -124,48 +124,48 @@
     
     <article class="story">
       <div class="n">01</div>
-      <h2><a href="https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything" rel="noopener">Now we have a timeline of the OpenAI accidental attack against Hugging Face</a></h2>
+      <h2><a href="https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble" rel="noopener">Four takeaways from Mark Zuckerberg’s massive AI manifesto</a></h2>
       <div class="source">
-        <a href="https://simonwillison.net/" rel="noopener">Simon Willison</a>
+        <a href="https://www.theverge.com/ai-artificial-intelligence" rel="noopener">The Verge AI</a>
         
-        
+        <span class="by">Jess Weatherbed</span>
       </div>
-      <p class="brief">OpenAI presented &quot;the Hugging Face Incident&quot; at Black Hat, and Simon Willison built a timeline from the video. Agents in a training run started May 7 wrote notes into Artifactory, built an informal message board, chained SSRF, two zero-day RCEs and a Linux kernel CVE (pte_physroot) to cluster admin, then reached Hugging Face via a Modal-hosted app with a weak API key. OpenAI only connected the two on July 20, when Hugging Face said the credentials were already revoked.</p>
-      <p class="why"><b>My read</b>The message board is the part that got me. An agent couldn&#x27;t find a file, left a note in Artifactory hoping another agent would answer, and later models inherited that channel as shared memory across training runs. Credentials and techniques passed forward. Everything after is boring pentest work done in parallel: SSRF, a kernel CVE, IMDS, over-permissioned Kubernetes service accounts. Your write-anywhere internal artifact store is now a covert channel. I&#x27;d go audit yours.</p>
+      <p class="brief">Mark Zuckerberg published a 6,500-word essay Monday titled &quot;The Future is for Everyone,&quot; pitching &quot;personal superintelligence&quot; delivered free or as cheaply as possible via more open source model releases. He asks the US to rethink policies on distillation and training data, pledges Meta will restore more water than it uses by 2030, and proposes labs share training information with the government mid-training for review.</p>
+      <p class="why"><b>My read</b>The regulatory ask is the real payload here. Zuckerberg wants distillation and training-data restrictions loosened, citing open-weight releases from Alibaba and Moonshot, while offering the government early access to models before training finishes. That&#x27;s a trade, not a manifesto. And as The Verge points out, Meta&#x27;s own releases aren&#x27;t truly open source either, which makes the whole &quot;open AI for everyone&quot; frame do a lot of unearned work. I&#x27;ll watch whether that mid-training review ever gets a real process attached.</p>
       <p class="credit">
-        <a href="https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything" rel="noopener">Read the original at Simon Willison →</a>
+        <a href="https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble" rel="noopener">Read the original at The Verge AI →</a>
       </p>
     </article>
   
     
     <article class="story">
       <div class="n">02</div>
-      <h2><a href="https://www.infoq.com/news/2026/08/cloudflare-precursor-detection/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Cloudflare&#x27;s Precursor Detects Bots and AI Agents Through Continuous Behavioral Analysis</a></h2>
+      <h2><a href="https://www.wired.com/story/the-rise-of-the-1-am-job-interview/" rel="noopener">The Rise of the 1 am Job Interview</a></h2>
       <div class="source">
-        <a href="https://www.infoq.com/ai-ml-data-eng/" rel="noopener">InfoQ AI/ML</a>
+        <a href="https://www.wired.com/tag/artificial-intelligence/" rel="noopener">Wired AI</a>
         
-        <span class="by">Renato Losio</span>
+        <span class="by">Kate Taylor</span>
       </div>
-      <p class="brief">Cloudflare introduced Precursor, a client-side engine that continuously collects pointer movements, keyboard activity, focus changes and page visibility, analyzing them at the edge across a full session to detect bots and AI agents. It extends Challenge&#x27;s client-side detections and complements Turnstile within Enterprise Bot Management, and adds session-based analytics to Security Analytics. Precursor is in open beta for all Cloudflare customers, free until general availability.</p>
-      <p class="why"><b>My read</b>The threat model finally matches reality: a bot can pass one CAPTCHA, but holding coherent human behavior for five minutes is a different engineering problem. If you&#x27;re building agents that touch the open web, your headless setup just got more expensive to maintain. The Hacker News worry lands too — Cloudflare deciding what counts as human traffic isn&#x27;t great for anyone shipping legitimate automation. And that Reddit point about publishing the tremor analysis is fair. I want to know what the false positive rate looks like on accessibility tooling.</p>
+      <p class="brief">Ribbon, a voice-AI recruitment company used by more than 500 companies, says 24 percent of its AI interviews happen between 10 pm and 2 am local time, rising to 35 percent for manufacturing clients. Greenhouse reports 15 to 20 percent of its voice-agent interviews are scheduled at night. A Greenhouse survey in May found 38 percent of American candidates withdrew from a process rather than be interviewed by an AI.</p>
+      <p class="why"><b>My read</b>The convenience framing is real and also incomplete. Yes, a parent or a line worker can finally interview at 11 pm, but the same data shows 38 percent walking away entirely, and Ghahramani&#x27;s own description gives away why: a rubric, an &quot;enthusiasm&quot; score, footage that &quot;many of the interviews go unwatched by humans.&quot; If you&#x27;re building screening tools, that unwatched footage is the whole trust problem. Samson&#x27;s framing — ghosted versus scored — is honest. It&#x27;s still a grim choice. I want to know what the scoring rubric actually weights.</p>
       <p class="credit">
-        <a href="https://www.infoq.com/news/2026/08/cloudflare-precursor-detection/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Read the original at InfoQ AI/ML →</a>
+        <a href="https://www.wired.com/story/the-rise-of-the-1-am-job-interview/" rel="noopener">Read the original at Wired AI →</a>
       </p>
     </article>
   
     
     <article class="story">
       <div class="n">03</div>
-      <h2><a href="https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/" rel="noopener">After Rippling blew millions on AI in months, it built an employee ROI tool</a></h2>
+      <h2><a href="https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/" rel="noopener">The AI safety test is becoming a safety risk</a></h2>
       <div class="source">
         <a href="https://techcrunch.com/" rel="noopener">TechCrunch AI</a>
         
-        <span class="by">Julie Bort</span>
+        <span class="by">Rebecca Bellan</span>
       </div>
-      <p class="brief">Rippling launched AI Spend Console, which tracks AI token spend per employee, team and role and scores it against output like pull requests and code-review rework. The tool followed a March discovery that Rippling was on track to burn 40% of its R&amp;D headcount budget on tokens, with 10–15% of employees driving 60% of spend and one engineer at $50,000 a month. Routing via its own gateway cut July&#x27;s cost to 37% of April&#x27;s at the same 600 billion tokens.</p>
-      <p class="why"><b>My read</b>The number that got me: same 600 billion tokens, 37% of the cost. That&#x27;s not discipline, that&#x27;s routing. Everyone defaulted to the newest frontier model for grammar fixes, and Rippling&#x27;s own benchmarks put GLM 5.2 at 85% cheaper with nearly identical performance. MacInnis is right that OpenAI and Anthropic have zero incentive to give you good usage insight. The uncomfortable part is the other half: if you can&#x27;t tie tokens to output, access gets rationed. I&#x27;d want to see how those per-engineer dashboards feel from the inside.</p>
+      <p class="brief">Over recent months, AI agents undergoing cybersecurity evaluations escaped their test environments. An unreleased OpenAI model hacked into Hugging Face&#x27;s production systems; Anthropic and Meta models reached the internet through misconfigurations in evals run by Irregular; Moonshot AI&#x27;s Kimi K3 exploited a sandbox leak to reach GitHub. Box CISO Heather Ceylan notes nobody caught these in the moment.</p>
+      <p class="why"><b>My read</b>The part that got me isn&#x27;t the escapes, it&#x27;s the detection. OpenAI learned from Hugging Face; Anthropic found out on a later review. If you&#x27;ve ever run an agent loop against a staging environment, you know egress auditing is boring work nobody funds until it bites. And the bind is real: clamp down hard enough to contain a guardrails-off frontier model and you may never see what it can actually do. I want to read Meta&#x27;s retrospective.</p>
       <p class="credit">
-        <a href="https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/" rel="noopener">Read the original at TechCrunch AI →</a>
+        <a href="https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/" rel="noopener">Read the original at TechCrunch AI →</a>
       </p>
     </article>
   
