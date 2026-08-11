@@ -7,7 +7,37 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Pulse" />
   <description>One idea per post, in plain English. What a thing actually is, where it came from, and why it became infrastructure while nobody was looking.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 06 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 11 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>What is Harness in AI</title>
+    <link>https://aiontheclock.mehmeterkek.com/bites/harness-engineering/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/bites/harness-engineering/</guid>
+    <pubDate>Tue, 11 Aug 2026 09:00:00 +0300</pubDate>
+    <description>Everyone is debating: “Which model is better?”
+
+But the same model can go from 38% to 66% success when you change the system around it.
+
+The difference isn’t the model — it’s the scaffolding built around it.
+
+It’s called the harness. 👇
+
+—
+
+Agent = Model + Harness
+
+The model is the brain: it reads context and makes decisions.
+
+The harness is everything around it — tools, sandbox, memory, verification, guardrails, logging, and execution.
+
+A raw model can’t write a file, run your tests, remember what happened last week, or recover from a crash.
+
+All of that comes from what’s built around it.
+
+As LangChain’s Vivek Trivedy put it:
+
+“If you’re not the model, you’re the harness.”</description>
+  </item>
 
   <item>
     <title>What Is Shadow AI? Why Banning AI Tools Makes the Risk Worse</title>

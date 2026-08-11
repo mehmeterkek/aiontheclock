@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>What is Harness in AI | AI on the Clock</title>
+<meta name="description" content="Everyone is debating: “Which model is better?”
+
+But the same model can go from 38% to 66% success when you change the system around it.
+
+The difference isn’t the model — it’s the scaffolding built around it.
+
+It’s called the harness. 👇
+
+—
+
+Agent = Model + Harness
+
+The model is the brain: it reads context and makes decisions.
+
+The harness is everything around it — tools, sandbox, memory, verification, guardrails, logging, and execution.
+
+A raw model can’t write a file, run your tests, remember what happened last week, or recover from a crash.
+
+All of that comes from what’s built around it.
+
+As LangChain’s Vivek Trivedy put it:
+
+“If you’re not the model, you’re the harness.”" />
+<link rel="canonical" href="https://aiontheclock.mehmeterkek.com/bites/harness-engineering/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aiontheclock.mehmeterkek.com/bites/harness-engineering/" />
+<meta property="og:title" content="What is Harness in AI" />
+<meta property="og:description" content="Everyone is debating: “Which model is better?”
+
+But the same model can go from 38% to 66% success when you change the system around it.
+
+The difference isn’t the model — it’s the scaffolding built around it.
+
+It’s called the harness. 👇
+
+—
+
+Agent = Model + Harness
+
+The model is the brain: it reads context and makes decisions.
+
+The harness is everything around it — tools, sandbox, memory, verification, guardrails, logging, and execution.
+
+A raw model can’t write a file, run your tests, remember what happened last week, or recover from a crash.
+
+All of that comes from what’s built around it.
+
+As LangChain’s Vivek Trivedy put it:
+
+“If you’re not the model, you’re the harness.”" />
+<meta property="og:site_name" content="Mehmet Erkek" />
+
+
+<meta property="og:image" content="https://aiontheclock.mehmeterkek.com/assets/harness-engineering/cover.webp" />
+<meta name="twitter:image" content="https://aiontheclock.mehmeterkek.com/assets/harness-engineering/cover.webp" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mehmeterkek" />
+
+
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Pulse (English)" href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Bites" href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" />
+<link rel="icon" href="data:,">
+
+<link rel="stylesheet" href="../../style.css">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What is Harness in AI",
+  "description": "Everyone is debating: “Which model is better?”\u000D\u000A\u000D\u000ABut the same model can go from 38% to 66% success when you change the system around it.\u000D\u000A\u000D\u000AThe difference isn’t the model — it’s the scaffolding built around it.\u000D\u000A\u000D\u000AIt’s called the harness. 👇\u000D\u000A\u000D\u000A—\u000D\u000A\u000D\u000AAgent \u003D Model + Harness\u000D\u000A\u000D\u000AThe model is the brain: it reads context and makes decisions.\u000D\u000A\u000D\u000AThe harness is everything around it — tools, sandbox, memory, verification, guardrails, logging, and execution.\u000D\u000A\u000D\u000AA raw model can’t write a file, run your tests, remember what happened last week, or recover from a crash.\u000D\u000A\u000D\u000AAll of that comes from what’s built around it.\u000D\u000A\u000D\u000AAs LangChain’s Vivek Trivedy put it:\u000D\u000A\u000D\u000A“If you’re not the model, you’re the harness.”",
+  "datePublished": "2026-08-11",
+  "author": { "@type": "Person", "name": "Mehmet Erkek" },
+  "image": "https://aiontheclock.mehmeterkek.com/assets/harness-engineering/cover.webp",
+  "mainEntityOfPage": "https://aiontheclock.mehmeterkek.com/bites/harness-engineering/"
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-443JW7SSTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-443JW7SSTF');
+</script>
+
+<style>
+  .digest { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .digest .kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
+                    color: var(--accent); font-weight: 600; margin: 0 0 .5rem; }
+  .digest h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  .digest .dateline { color: var(--text-muted); font-size: .9rem; margin: 0 0 2.5rem; }
+  .digest .intro { color: var(--text-muted); border-left: 2px solid var(--border);
+                   padding-left: 1rem; margin: 0 0 2.8rem; }
+
+  .story { padding-left: 2.4rem; position: relative; margin-bottom: 2.8rem; }
+  .story .n { position: absolute; left: 0; top: .2rem; font-size: .8rem; font-weight: 700;
+              color: var(--gold); font-variant-numeric: tabular-nums; }
+  .story h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 .3rem; }
+  .story h2 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .story h2 a:hover { color: var(--accent); border-color: var(--accent); }
+  .story .source { font-size: .74rem; text-transform: uppercase; letter-spacing: .08em;
+                   color: var(--gold); margin-bottom: .8rem; }
+  .story .source a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+  .story .source a:hover { border-color: currentColor; }
+  .story .source .by { text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+  .story .source .by::before { content: "· "; }
+  .story .credit { margin: .7rem 0 0; font-size: .82rem; }
+  .story .credit a { color: var(--text-muted); text-decoration: none; }
+  .story .credit a:hover { color: var(--accent); }
+
+  .story .brief { margin: 0 0 1rem; }
+  .story .why { margin: 0; background: var(--surface); border: 1px solid var(--border);
+                border-radius: 10px; padding: 1rem 1.15rem; }
+  .story .why b { display: block; font-size: .68rem; text-transform: uppercase;
+                  letter-spacing: .1em; color: var(--text-muted); margin-bottom: .4rem; }
+
+  .archive { list-style: none; padding: 0; margin: 2rem 0 0; }
+  .archive li { border-top: 1px solid var(--border); padding: 1.1rem 0; }
+  .archive a.day { font-size: 1.05rem; font-weight: 600; color: var(--text); text-decoration: none; }
+  .archive a.day:hover { color: var(--accent); }
+  .archive .titles { color: var(--text-muted); font-size: .88rem; margin: .35rem 0 0; }
+
+  .digest footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.2rem;
+                   font-size: .82rem; color: var(--text-muted); }
+  .digest footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+
+<div class="bg-fx"></div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="../../">AI on the Clock</a>
+    <span class="spacer"></span>
+    <a class="back" href="https://www.mehmeterkek.com">mehmeterkek.com</a>
+  </div>
+</header>
+
+<main class="digest">
+  
+  
+  <nav class="aiotc-nav">
+    <a class="tab " href="../../pulse/">Pulse</a>
+    <a class="tab on" href="../../bites/">Bites</a>
+    <span class="blurb">Explainers and carousels, twice a week.</span>
+    
+  </nav>
+  
+
+
+<article class="aiotc-article">
+  <p class="aiotc-kicker">Nº 005 · <b>ENGINEERING</b> · 11 August 2026</p>
+  <h1>What is Harness in AI</h1>
+  <p class="aiotc-standfirst">Everyone is debating: “Which model is better?”
+
+But the same model can go from 38% to 66% success when you change the system around it.
+
+The difference isn’t the model — it’s the scaffolding built around it.
+
+It’s called the harness. 👇
+
+—
+
+Agent = Model + Harness
+
+The model is the brain: it reads context and makes decisions.
+
+The harness is everything around it — tools, sandbox, memory, verification, guardrails, logging, and execution.
+
+A raw model can’t write a file, run your tests, remember what happened last week, or recover from a crash.
+
+All of that comes from what’s built around it.
+
+As LangChain’s Vivek Trivedy put it:
+
+“If you’re not the model, you’re the harness.”</p>
+
+  <div class="aiotc-slides">
+    
+      <figure>
+        <img src="../../assets/harness-engineering/cover.webp" alt="AI on the Clock No. 005, Engineering — &quot;The part nobody benchmarks: Harness.&quot; Definition: everything around the model — tools, loop, context, memory, sandbox, verification, guardrails. The model is the part you choose; the harness is the part you build." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/harness-engineering/02.webp" alt="The definition: Agent = Model + Harness. The model is the brain — it reasons and decides. The harness is the body and the workspace: it acts, remembers, verifies, and enforces limits. Quote from Vivek Trivedy of LangChain: &quot;If you&#x27;re not the model, you&#x27;re the harness.&quot;" width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/harness-engineering/03.webp" alt="How it runs: the model decides an action, then an arrow points down to the harness, which executes the tool, captures the result, and updates context — repeating until done or stopped. This is the ReAct loop (Yao et al., 2022); the complexity isn&#x27;t in the loop, it&#x27;s in everything the loop manages." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/harness-engineering/04.webp" alt="The progression, each step leading to the next: 1) prompt engineering — wording the ask; 2) context engineering — curating what the model sees; 3) harness engineering — designing the whole system around it. Each contains the last: prompts and context live inside the harness." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/harness-engineering/05.webp" alt="The building blocks of a harness: system prompt (standing instructions and constraints); tools and execution (model decides, harness executes); sandbox and files (workspace where the agent operates); memory and compaction (what persists, what gets summarized); verification (test, inspect, validate, correct course); guardrails and observability (approvals, limits, logs, full trace)." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/harness-engineering/06.webp" alt="The evidence: researchers fixed the model, then ran the same coding tasks through five different harnesses. GLM 5.1 went from 60.9% to 73.4%, a gain of 12.5 points; Qwen 3.6-flash went from 38.6% to 66.0%, a gain of 27.4 points. Only the harness changed, and a separate study of 106 tasks and 5,194 runs reached the same conclusion. Sources: CLAW-SWE-Bench and Harness-Bench (arXiv, 2026); pass@1 means solved on first attempt." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/harness-engineering/07.webp" alt="Where harnesses break: context rot — history grows and reasoning degrades; tool overload — too many options, worse decisions; brittle wiring — a reworded description breaks the call; weak verification — success declared on incomplete work; missing guardrails — irreversible action with no approval. These aren&#x27;t necessarily model problems, but the model gets the blame anyway." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/harness-engineering/08.webp" alt="Time&#x27;s up: model choice is a decision, harness design is a discipline. Three takeaways — start dumb with one reliable loop first; write tool descriptions like docs; instrument everything, because you can&#x27;t debug what you can&#x27;t see. Save this for your next agent build." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+  </div>
+
+  <p class="aiotc-download">
+    <a href="../../assets/harness-engineering/harness-engineering.pdf" download>Download the deck (PDF, 8 pages)</a>
+    <a href="https://www.linkedin.com/posts/mehmet-erkek_harness-engineering-ugcPost-7492796257720152064-k205/" target="_blank" rel="noopener">Read the original on LinkedIn</a>
+  </p>
+
+  <div class="aiotc-body"><p>Everyone is debating: “Which model is better?” But the same model can go from 38% to 66% success when you change the system around it. The difference isn’t the model — it’s the scaffolding built around it. It’s called the harness. </p>
+<p>Agent = Model + Harness.</p>
+<p>The model is the brain: it reads context and decides. The harness is everything around it — tools, sandbox, memory, verification, guardrails, logging.</p>
+<p>A raw model can't write a file, run your tests, remember last week, or recover from a crash. All of that comes from what's built around it.</p>
+<p>As LangChain's Vivek Trivedy put it: "If you're not the model, you're the harness."</p>
+<p>HOW IT RUNS</p>
+<p>Model decides an action → harness executes the tool, captures the result, updates context → repeat until done or stopped.</p>
+<p>That's the ReAct loop (Yao et al., 2022). The complexity isn't in the loop — it's in everything the loop manages.</p>
+<p>THE PROGRESSION</p>
+<p>→ Prompt engineering — wording the ask
+→ Context engineering — curating what the model sees
+→ Harness engineering — designing the whole system around it</p>
+<p>Each contains the last.</p>
+<p>THE EVIDENCE</p>
+<p>Researchers fixed the model, then ran the same coding tasks through five different harnesses:</p>
+<p>→ GLM 5.1: 60.9% → 73.4% solved on first attempt
+→ Qwen 3.6-flash: 38.6% → 66.0%</p>
+<p>Same model. Same tasks. Only the harness changed.</p>
+<p>A second study (106 tasks, 5,194 runs) concluded: capability should be reported per model-harness pair, not per model.</p>
+<p>WHERE HARNESSES BREAK</p>
+<p>→ CONTEXT ROT — history grows, reasoning degrades
+→ TOOL OVERLOAD — too many options, worse decisions
+→ BRITTLE WIRING — a reworded tool description silently breaks the call
+→ WEAK VERIFICATION — success declared on incomplete work
+→ MISSING GUARDRAILS — irreversible actions, no approval</p>
+<p>These aren't necessarily model problems. The model gets the blame anyway.</p>
+<p>THREE RULES</p>
+<ol>
+<li>Start dumb — one reliable loop before planning layers or sub-agents.</li>
+<li>Write tool descriptions like documentation. The model reads them.</li>
+<li>Instrument everything. You can't debug what you can't see.</li>
+</ol>
+<p>Model choice is a decision. Harness design is a discipline.</p>
+<p>Before you swap models again, look at the scaffolding around the one you already have.</p>
+<p>What's the worst agent failure you've debugged — and was it really the model? 👇</p>
+<p>Sources: Claw-SWE-Bench · Harness-Bench (arXiv, 2026)</p>
+<h1>AIontheClock #AIAgents #AIEngineering #AgenticAI #HarnessEngineering</h1></div>
+
+  <nav class="aiotc-pager">
+    <a href="../shadow-ai/" class="prev"><span>Previous</span>What Is Shadow AI? Why Banning AI Tools Makes the Risk Worse</a>
+    
+  </nav>
+</article>
+
+
+  
+  
+  <aside class="aiotc-cta">
+    <h2>Where does your company actually stand on AI?</h2>
+    <p>A free scan across six areas — strategy, data, applications, skills, risk and measurement. About four minutes, and you get the two things to fix first as a PDF.</p>
+    <a href="https://www.mehmeterkek.com/ai-maturity-report.html" class="btn btn-primary">Take the scan <span class="arrow">&rarr;</span></a>
+  </aside>
+  
+
+  <footer>
+    <p>
+      One idea per post, explained properly. Written by hand, no schedule to keep.
+    </p>
+    <p>
+      Pulse feed: <a href="../../pulse/feed.xml">RSS</a> ·
+      Bites feed: <a href="../../bites/feed.xml">RSS</a>
+    </p>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Written by <a href="https://www.mehmeterkek.com">Mehmet Erkek</a>.</p>
+    <p>Pulse is assembled with a model and edited by hand. Bites are written by hand.</p>
+  </div>
+</footer>
+
+<!-- Digital twin chat widget — its own Cloud Run service, see repos/my-digital-twin -->
+<script src="https://my-digital-twin-625021277379.europe-west3.run.app/twin-widget.js"
+        data-endpoint="https://my-digital-twin-625021277379.europe-west3.run.app"
+        data-name="Mehmet Erkek"
+        data-title="AI Leader &amp; Technology Executive"
+        defer></script>
+</body>
+</html>
