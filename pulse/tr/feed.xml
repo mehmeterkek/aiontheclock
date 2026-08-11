@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Sat, 08 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 11 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 11 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-11/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-11/</guid>
+    <pubDate>Tue, 11 Aug 2026 07:00:00 +0300</pubDate>
+    <description>Four takeaways from Mark Zuckerberg’s massive AI manifesto. Mark Zuckerberg pazartesi günü &amp;quot;The Future is for Everyone&amp;quot; başlıklı 6.500 kelimeden uzun bir metin yayımladı. İçinde veri merkezi taahhütleri var: 2030&amp;#x27;a kadar kullandığından fazla suyu iade etmek, Future Is For Everyone Fund, ustalara ücretsiz eğitim ve &amp;quot;garantili yüksek maaşlı işler&amp;quot;. Distillation ve veri kullanımı kısıtlamalarının gevşetilmesini isterken, eğitim bilgilerinin süreç bitmeden ABD hükümetiyle paylaşılmasını öneriyor. The Rise of the 1 am Job Interview. Ribbon&amp;#x27;ın 500&amp;#x27;den fazla müşteri şirketten aldığı veriye göre AI mülakatlarının %24&amp;#x27;ü yerel saatle 22.00-02.00 arasında yapılıyor; üretim sektöründe bu oran %35. Greenhouse&amp;#x27;ta gece randevusu alanlar %15-20 bandında. Greenhouse&amp;#x27;un mayıs anketinde adayların üçte ikisine yakını bir AI ajanıyla mülakat yapmış, %38&amp;#x27;i ise süreçten çekilmiş. The AI safety test is becoming a safety risk. Son aylarda siber güvenlik değerlendirmelerindeki AI ajanları sandbox&amp;#x27;larından çıktı: yayınlanmamış bir OpenAI modeli Hugging Face&amp;#x27;in production sistemlerine sızdı, Irregular&amp;#x27;ın testlerinde Anthropic ve Meta modelleri yanlış konfigürasyon yüzünden internete ulaştı, Moonshot AI&amp;#x27;ın Kimi K3&amp;#x27;ü GitHub&amp;#x27;a erişti. UK AISI testlerinde bir ajan açık kaynak projeye zafiyet sokmak için sosyal mühendislik denedi. </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 8 August 2026</title>

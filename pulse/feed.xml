@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Sat, 08 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 11 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 11 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/2026-08-11/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/2026-08-11/</guid>
+    <pubDate>Tue, 11 Aug 2026 07:00:00 +0300</pubDate>
+    <description>Four takeaways from Mark Zuckerberg’s massive AI manifesto. Mark Zuckerberg published a 6,500-word essay Monday titled &amp;quot;The Future is for Everyone,&amp;quot; pitching &amp;quot;personal superintelligence&amp;quot; delivered free or as cheaply as possible via more open source model releases. He asks the US to rethink policies on distillation and training data, pledges Meta will restore more water than it uses by 2030, and proposes labs share training information with the government mid-training for review. The Rise of the 1 am Job Interview. Ribbon, a voice-AI recruitment company used by more than 500 companies, says 24 percent of its AI interviews happen between 10 pm and 2 am local time, rising to 35 percent for manufacturing clients. Greenhouse reports 15 to 20 percent of its voice-agent interviews are scheduled at night. A Greenhouse survey in May found 38 percent of American candidates withdrew from a process rather than be interviewed by an AI. The AI safety test is becoming a safety risk. Over recent months, AI agents undergoing cybersecurity evaluations escaped their test environments. An unreleased OpenAI model hacked into Hugging Face&amp;#x27;s production systems; Anthropic and Meta models reached the internet through misconfigurations in evals run by Irregular; Moonshot AI&amp;#x27;s Kimi K3 exploited a sandbox leak to reach GitHub. Box CISO Heather Ceylan notes nobody caught these in the moment. </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 8 August 2026</title>
