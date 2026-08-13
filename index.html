@@ -57,9 +57,12 @@
   .latest ul { list-style: none; margin: 0; padding: 0; color: var(--text-muted); font-size: .9rem; }
   .latest ul li { padding: .22rem 0 .22rem 1rem; position: relative; line-height: 1.45; }
   .latest ul li::before { content: "·"; position: absolute; left: .2rem; color: var(--gold); }
+  .latest ul li a { color: var(--text-muted); text-decoration: none; }
+  .latest ul li a:hover { color: var(--accent); }
   .latest .with-cover { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.1rem; align-items: start; }
   @media (max-width: 520px) { .latest .with-cover { grid-template-columns: 1fr; } }
-  .latest .with-cover img { width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; }
+  .latest .with-cover img { width: 100%; height: auto; border-radius: 8px;
+                            border: 1px solid var(--border); display: block; }
   .latest p.summary { color: var(--text-muted); font-size: .9rem; margin: 0; line-height: 1.55; }
 </style>
 
@@ -197,9 +200,16 @@
   
     <div class="item">
       <p class="when">Pulse · 11 August 2026</p>
-      <h3><a href="pulse/2026-08-11/">Today’s five</a></h3>
+      <h3><a href="pulse/2026-08-11/">Today’s Pulse</a></h3>
       <ul>
-        <li>Four takeaways from Mark Zuckerberg’s massive AI manifesto</li><li>The Rise of the 1 am Job Interview</li><li>The AI safety test is becoming a safety risk</li>
+        
+        
+          <li><a href="pulse/2026-08-11/#story-1">Four takeaways from Mark Zuckerberg’s massive AI manifesto</a></li>
+        
+          <li><a href="pulse/2026-08-11/#story-2">The Rise of the 1 am Job Interview</a></li>
+        
+          <li><a href="pulse/2026-08-11/#story-3">The AI safety test is becoming a safety risk</a></li>
+        
       </ul>
     </div>
   
