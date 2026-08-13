@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 11 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Thu, 13 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 13 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-13/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-13/</guid>
+    <pubDate>Thu, 13 Aug 2026 07:00:00 +0300</pubDate>
+    <description>Claude&amp;#x27;s new Scarlet Letter watermark is invisible — for now. Anthropic, AB&amp;#x27;nin AI Act&amp;#x27;ine uyum icin modellerinin urettigi degil, isledigi tum icerige makine tarafindan okunabilir watermark eklemeye basliyor. Yasa 2 Agustos sonrasi cikan modelleri kapsiyor, onceki modeller icin Aralik 2026&amp;#x27;ya kadar sure var. Metin ciktilarinda kullaniciya gorunmez gomulu isaretler, metin disi dosyalarda C2PA provenance metadata kullanilacak; kural sadece AB&amp;#x27;de degil, kuresel olarak tum yeni modellerde gecerli olacak. How kids feel about AI, in their own words. MIT Technology Review, 10-18 yaş arası çocuklara AI&amp;#x27;ı sordu; çoğu en azından biraz kullandığını söyledi, bazıları çevresel etki yüzünden hiç dokunmuyor. Şubat 2026&amp;#x27;da yayımlanan Pew Research Center anketine göre ABD&amp;#x27;deki gençlerin %57&amp;#x27;si bilgi aramak, %54&amp;#x27;ü ödev, %47&amp;#x27;si eğlence için chatbot kullanmış; duygusal destek için kullanan yalnızca %12. </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 11 August 2026</title>
