@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 13 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Sat, 15 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 15 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-15/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/tr/2026-08-15/</guid>
+    <pubDate>Sat, 15 Aug 2026 07:00:00 +0300</pubDate>
+    <description>Introducing Gemini 3.7 Flash. Google DeepMind, 3.6 Flash&amp;#x27;ın üzerinden yalnızca üç hafta geçmişken Gemini 3.7 Flash&amp;#x27;ı yayına aldı. Kıyas testlerinde DeepSWE v1.1&amp;#x27;de %65,3&amp;#x27;e karşı %49,0, FrontierCode 1.1 Main&amp;#x27;de %43,6&amp;#x27;ya karşı %34,4, WebDev Arena&amp;#x27;da 1588&amp;#x27;e karşı 1538 Elo. Yıl sonuna kadar geçerli tanıtım fiyatı 1M input için 0,75 dolar, output için 3,75 dolar; 160&amp;#x27;tan fazla ülkedeki Gemini Spark bugünden itibaren bu modeli kullanıyor. </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 13 August 2026</title>

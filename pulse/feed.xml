@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 13 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Sat, 15 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 15 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/2026-08-15/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/2026-08-15/</guid>
+    <pubDate>Sat, 15 Aug 2026 07:00:00 +0300</pubDate>
+    <description>Introducing Gemini 3.7 Flash. Google DeepMind released Gemini 3.7 Flash three weeks after 3.6 Flash, at an introductory price of $0.75/1M input and $3.75/1M output tokens through the end of the year — half the 3.6 cost. Reported gains: DeepSWE v1.1 65.3% vs 49.0%, FrontierCode 1.1 Main 43.6% vs 34.4%, GDP.pdf 34.0% vs 22.0%, WebDev Arena Elo 1588 vs 1538. Gemini Spark switches to it today. </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 13 August 2026</title>
