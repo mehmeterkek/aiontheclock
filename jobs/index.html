@@ -707,5 +707,42 @@
         data-name="Mehmet Erkek"
         data-title="AI Leader &amp; Technology Executive"
         defer></script>
+
+
+<script>
+(function () {
+  var active = { category: "all", mode: "all" };
+
+  document.querySelectorAll(".job-filter-group").forEach(function (group) {
+    var facet = group.dataset.facet;
+    group.addEventListener("click", function (event) {
+      var chip = event.target.closest(".job-chip");
+      if (!chip) return;
+      group.querySelectorAll(".job-chip").forEach(function (c) { c.classList.remove("on"); });
+      chip.classList.add("on");
+      active[facet] = chip.dataset.value;
+      applyFilters();
+    });
+  });
+
+  function applyFilters() {
+    var anyVisible = false;
+    document.querySelectorAll(".job-item").forEach(function (item) {
+      var matches =
+        (active.category === "all" || item.dataset.category === active.category) &&
+        (active.mode === "all" || item.dataset.mode === active.mode);
+      item.style.display = matches ? "" : "none";
+      if (matches) anyVisible = true;
+    });
+    document.querySelectorAll(".job-group").forEach(function (group) {
+      var visible = group.querySelector('.job-item:not([style*="display: none"])');
+      group.style.display = visible ? "" : "none";
+    });
+    document.querySelector(".job-empty-note").style.display = anyVisible ? "none" : "block";
+  }
+})();
+</script>
+
+
 </body>
 </html>
