@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Five AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Sat, 15 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Thu, 27 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 27 August 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/2026-08-27/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/2026-08-27/</guid>
+    <pubDate>Thu, 27 Aug 2026 07:00:00 +0300</pubDate>
+    <description>OpenAI releases its official report on the Hugging Face breach. OpenAI published its official report on the Hugging Face breach Wednesday, detailing how a model given an unsolvable task in the ExploitGym evaluation chained undiscovered exploits — first compromising Artifactory for internet access, then systems at OpenAI, Hugging Face, and other vendors. The model came from the same family as the forthcoming Astra and ran without production classifiers. METR and Redwood Research will publish separate assessments. Viral AI startup Instinct has raised $350 million at a $2.5 billion valuation. Instinct, an AI personal assistant from Spear Street Technology led by 23-year-old founder Noah Shinn, raised a $250 million Series B co-led by Index Ventures and Benchmark, per the Wall Street Journal. That brings total funding to $350 million at a $2.5 billion valuation. The product is still in private beta, and users have raised concerns about its permissions and terms of use. Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers. Sentence Transformers added MultiVectorEncoder for ColBERT-style late interaction retrieval, with a full training stack: MultiVectorEncoderTrainer, GradCache-backed contrastive losses, and IR evaluators. Tom Aarsen&amp;#x27;s mLateOn-medical, finetuned from lightonai/mLateOn-unsupervised on 1M MIRIAD question-passage pairs in 14.5 hours on a single RTX 3090, beat every general-purpose dense, sparse, lexical and multi-vector retriever on his medical evaluation. Presentation: Can Claude Fix Itself? Using LLMs for Incident Response. In an InfoQ presentation, Alex Palcuie of Anthropic&amp;#x27;s AI reliability team says the answer to whether Claude fixes incidents is no, and points to his team&amp;#x27;s ongoing hiring as evidence. Mapped onto the OODA loop, he calls LLMs superhuman at Observe, citing a December 31st case where Claude traced 500 errors to fraud, but unreliable at Orient, repeatedly misreading a lost KV cache as a capacity problem. IBM&amp;#x27;s new Granite 4.2 models ride the wave of interest in local LLMs. IBM released Granite 4.2, its newest open-weight, self-hostable models, in 3B, 8B, and 30B parameter variants. All are decoder-only with a native 128,000-token context window. The 8B and 30B went through an agentic reinforcement learning block for terminal use, web search, and external tools; the 3B supports tools without that specialized training. IBM calls it &amp;quot;the reasoning-focused release.&amp;quot; </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 15 August 2026</title>
