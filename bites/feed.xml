@@ -7,7 +7,23 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Pulse" />
   <description>One idea per post, in plain English. What a thing actually is, where it came from, and why it became infrastructure while nobody was looking.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 17 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Mon, 31 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>The AI Productivity Paradox: Why Adoption Isn&#x27;t Showing Up in the Numbers</title>
+    <link>https://aiontheclock.mehmeterkek.com/bites/productivity-paradox/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/bites/productivity-paradox/</guid>
+    <pubDate>Mon, 31 Aug 2026 09:00:00 +0300</pubDate>
+    <description>Record AI spending, real individual gains, limited enterprise impact — the same pattern Robert Solow named in 1987. What the productivity J-curve says about why the payoff takes longer than the rollout.</description>
+  </item>
+
+  <item>
+    <title>Human-in-the-Loop Isn&#x27;t a Brake — It&#x27;s How You Design Autonomy</title>
+    <link>https://aiontheclock.mehmeterkek.com/bites/human-in-the-loop/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/bites/human-in-the-loop/</guid>
+    <pubDate>Mon, 24 Aug 2026 09:00:00 +0300</pubDate>
+    <description>Full autonomy or full manual is the wrong question. Three modes of human oversight, when to use each, and the four questions that decide how much rope to give your agents.</description>
+  </item>
 
   <item>
     <title>What Is the Lethal Trifecta? The Pattern Behind AI Agent Attacks</title>
