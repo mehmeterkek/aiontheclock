@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>One AI story a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 27 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 08 Sep 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 8 September 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/tr/2026-09-08/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/tr/2026-09-08/</guid>
+    <pubDate>Tue, 08 Sep 2026 07:00:00 +0300</pubDate>
+    <description>Whispering Complaints Into Your Phone May Be the Future of Customer Feedback. Voicebox adlı startup, mağazalarda QR kod veya NFC ile müşterilerin sesli geri bildirim bırakmasını sağlıyor; konuşma otomatik transkribe edilip sentiment analiziyle şirket panosuna düşüyor. CEO Karan Gupta&amp;#x27;ya göre son iki yılda ses teknolojisi hem hızlı hem doğru hale geldi; şirket havalimanı terminalleriyle ortaklık kurdu ve artık herkesin herhangi bir işletme hakkında yorum bırakabileceği bir &amp;#x27;directory&amp;#x27; özelliği başlattı. </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 27 August 2026</title>
