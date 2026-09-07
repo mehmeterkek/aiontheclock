@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>What Is the Lethal Trifecta? The Pattern Behind AI Agent Attacks | AI on the Clock</title>
+<meta name="description" content="Private data access, untrusted content, and external communication — each fine alone, dangerous combined. Simon Willison&#x27;s name for the pattern behind most AI agent security incidents, and how to break it." />
+<link rel="canonical" href="https://aiontheclock.mehmeterkek.com/bites/lethal-trifecta/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aiontheclock.mehmeterkek.com/bites/lethal-trifecta/" />
+<meta property="og:title" content="What Is the Lethal Trifecta? The Pattern Behind AI Agent Attacks" />
+<meta property="og:description" content="Private data access, untrusted content, and external communication — each fine alone, dangerous combined. Simon Willison&#x27;s name for the pattern behind most AI agent security incidents, and how to break it." />
+<meta property="og:site_name" content="Mehmet Erkek" />
+
+
+<meta property="og:image" content="https://aiontheclock.mehmeterkek.com/assets/lethal-trifecta/cover.webp" />
+<meta name="twitter:image" content="https://aiontheclock.mehmeterkek.com/assets/lethal-trifecta/cover.webp" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mehmeterkek" />
+
+
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Pulse (English)" href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="AI on the Clock — Bites" href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" />
+<link rel="icon" href="data:,">
+
+<link rel="stylesheet" href="../../style.css">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Is the Lethal Trifecta? The Pattern Behind AI Agent Attacks",
+  "description": "Private data access, untrusted content, and external communication — each fine alone, dangerous combined. Simon Willison\u0027s name for the pattern behind most AI agent security incidents, and how to break it.",
+  "datePublished": "2026-08-17",
+  "author": { "@type": "Person", "name": "Mehmet Erkek" },
+  "image": "https://aiontheclock.mehmeterkek.com/assets/lethal-trifecta/cover.webp",
+  "mainEntityOfPage": "https://aiontheclock.mehmeterkek.com/bites/lethal-trifecta/"
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-443JW7SSTF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-443JW7SSTF');
+</script>
+
+<style>
+  .digest { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .digest .kicker { font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
+                    color: var(--accent); font-weight: 600; margin: 0 0 .5rem; }
+  .digest h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  .digest .dateline { color: var(--text-muted); font-size: .9rem; margin: 0 0 2.5rem; }
+  .digest .intro { color: var(--text-muted); border-left: 2px solid var(--border);
+                   padding-left: 1rem; margin: 0 0 2.8rem; }
+
+  .story { padding-left: 2.4rem; position: relative; margin-bottom: 2.8rem; }
+  .story .n { position: absolute; left: 0; top: .2rem; font-size: .8rem; font-weight: 700;
+              color: var(--gold); font-variant-numeric: tabular-nums; }
+  .story h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 .3rem; }
+  .story h2 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .story h2 a:hover { color: var(--accent); border-color: var(--accent); }
+  .story .source { font-size: .74rem; text-transform: uppercase; letter-spacing: .08em;
+                   color: var(--gold); margin-bottom: .8rem; }
+  .story .source a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+  .story .source a:hover { border-color: currentColor; }
+  .story .source .by { text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+  .story .source .by::before { content: "· "; }
+  .story .credit { margin: .7rem 0 0; font-size: .82rem; }
+  .story .credit a { color: var(--text-muted); text-decoration: none; }
+  .story .credit a:hover { color: var(--accent); }
+
+  .story .brief { margin: 0 0 1rem; }
+  .story .why { margin: 0; background: var(--surface); border: 1px solid var(--border);
+                border-radius: 10px; padding: 1rem 1.15rem; }
+  .story .why b { display: block; font-size: .68rem; text-transform: uppercase;
+                  letter-spacing: .1em; color: var(--text-muted); margin-bottom: .4rem; }
+
+  .archive { list-style: none; padding: 0; margin: 2rem 0 0; }
+  .archive li { border-top: 1px solid var(--border); padding: 1.1rem 0; }
+  .archive a.day { font-size: 1.05rem; font-weight: 600; color: var(--text); text-decoration: none; }
+  .archive a.day:hover { color: var(--accent); }
+  .archive .titles { color: var(--text-muted); font-size: .88rem; margin: .35rem 0 0; }
+
+  .digest footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.2rem;
+                   font-size: .82rem; color: var(--text-muted); }
+  .digest footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+
+<div class="bg-fx"></div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="../../">
+      
+<svg class="aiotc-mark" viewBox="0 0 600 600"
+     fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-hidden="true" focusable="false">
+  <path d="M150 300C150 260.218 165.804 222.064 193.934 193.934C222.064 165.804 260.218 150 300 150V300L150 300Z" fill="#29364F"/>
+  <circle cx="300" cy="300" r="138" fill="none" stroke="#6B73FF" stroke-width="24"/>
+  <rect x="286.25" y="150" width="27.5" height="162.5" rx="13.75" fill="#6B73FF"/>
+  <rect x="150" y="286.25" width="172.5" height="26.25" rx="13.125" fill="#6B73FF"/>
+  <path d="M202.239 258.767H223.462L223.635 260.36H202.023L202.239 258.767ZM207.319 281.497C207.319 281.67 207.261 281.813 207.146 281.928C207.032 282.043 206.845 282.1 206.587 282.1H190.314C190.056 282.1 189.869 282.043 189.754 281.928C189.611 281.813 189.539 281.67 189.539 281.497C189.539 281.296 189.611 281.153 189.754 281.067C189.898 280.952 190.056 280.866 190.228 280.809L191.089 280.464C192.265 280.034 193.456 279.144 194.662 277.795C195.896 276.446 196.886 274.495 197.632 271.94L209.643 229.88C210.131 228.244 210.203 226.953 209.859 226.006C209.514 225.03 208.94 224.241 208.137 223.638C207.649 223.265 207.276 223.021 207.017 222.906C206.788 222.763 206.673 222.605 206.673 222.433C206.673 222.203 206.745 222.045 206.888 221.959C207.032 221.873 207.247 221.83 207.534 221.83H231.082C231.369 221.83 231.584 221.873 231.728 221.959C231.871 222.045 231.943 222.203 231.943 222.433C231.943 222.634 231.828 222.806 231.599 222.949C231.369 223.093 230.996 223.294 230.479 223.552C230.078 223.724 229.805 224.011 229.662 224.413C229.547 224.786 229.633 225.461 229.92 226.436L246.064 278.01C246.293 278.756 246.595 279.345 246.968 279.775C247.341 280.177 247.771 280.464 248.259 280.636C248.604 280.78 248.833 280.909 248.948 281.024C249.091 281.139 249.163 281.296 249.163 281.497C249.163 281.67 249.091 281.813 248.948 281.928C248.804 282.043 248.589 282.1 248.302 282.1H223.807C223.52 282.1 223.304 282.043 223.161 281.928C223.017 281.813 222.946 281.67 222.946 281.497C222.946 281.296 223.003 281.167 223.118 281.11C223.261 281.024 223.491 280.923 223.807 280.809L225.27 280.335C226.074 280.077 226.533 279.747 226.648 279.345C226.792 278.943 226.72 278.283 226.433 277.365L211.322 228.847L212.743 225.403L199.354 272.069C198.953 273.476 198.981 274.724 199.44 275.815C199.9 276.905 200.675 277.838 201.765 278.613C202.884 279.388 204.219 280.019 205.769 280.507L206.63 280.809C206.888 280.895 207.06 280.995 207.146 281.11C207.261 281.196 207.319 281.325 207.319 281.497ZM273.837 278.871C273.837 279.244 274.009 279.546 274.353 279.775C274.698 280.005 275.186 280.191 275.817 280.335L278.185 280.765C278.73 280.909 279.003 281.139 279.003 281.454C279.003 281.655 278.931 281.813 278.788 281.928C278.673 282.043 278.472 282.1 278.185 282.1H250.891C250.604 282.1 250.389 282.043 250.245 281.928C250.131 281.813 250.073 281.655 250.073 281.454C250.073 281.139 250.36 280.909 250.934 280.765L253.259 280.335C253.919 280.191 254.407 280.005 254.723 279.775C255.067 279.546 255.239 279.244 255.239 278.871V225.059C255.239 224.686 255.067 224.384 254.723 224.155C254.407 223.925 253.919 223.739 253.259 223.595L250.934 223.165C250.36 223.021 250.073 222.777 250.073 222.433C250.073 222.261 250.131 222.117 250.245 222.002C250.389 221.887 250.604 221.83 250.891 221.83H278.185C278.472 221.83 278.673 221.887 278.788 222.002C278.931 222.117 279.003 222.261 279.003 222.433C279.003 222.777 278.73 223.021 278.185 223.165L275.817 223.595C275.186 223.739 274.698 223.925 274.353 224.155C274.009 224.384 273.837 224.686 273.837 225.059V278.871Z" fill="#AD6FF2"/>
+</svg>
+
+      <span>AI on the Clock</span>
+    </a>
+
+    <nav class="masthead-nav">
+      <a href="../../" >Home</a>
+      <a href="../../pulse/" >Pulse</a>
+      <a href="../../bites/" class="on">Bites</a>
+      <a href="../../jobs/" >Jobs</a>
+    </nav>
+
+    <span class="spacer"></span>
+
+    
+    
+    <a class="back" href="https://www.mehmeterkek.com">mehmeterkek.com</a>
+  </div>
+</header>
+
+<main class="digest">
+
+<article class="aiotc-article">
+  <p class="aiotc-kicker">Nº 006 · <b>SECURITY</b> · 17 August 2026</p>
+  <h1>What Is the Lethal Trifecta? The Pattern Behind AI Agent Attacks</h1>
+  <p class="aiotc-standfirst">Private data access, untrusted content, and external communication — each fine alone, dangerous combined. Simon Willison&#x27;s name for the pattern behind most AI agent security incidents, and how to break it.</p>
+
+  <div class="aiotc-slides">
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/cover.webp" alt="The lethal trifecta. Three ordinary capabilities. Combined, they can turn an AI agent into an open door. Manageable alone. Dangerous together." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/02.webp" alt="Three capabilities make up the lethal trifecta, coined by security researcher Simon Willison in June 2025: private data access (it can read your files, email, or database), untrusted content (it processes content controlled by someone else), and external communication (it can send information outside the system). Any one can be useful. The risk emerges when all three meet." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/03.webp" alt="The model can&#x27;t reliably distinguish data from instructions. An agent may read an email, web page, document, or support ticket containing malicious instructions. Those instructions enter the model&#x27;s context alongside trusted instructions. The model may then act on them. Prompt injection turns untrusted content into potential instructions." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/04.webp" alt="How the attack runs: Attacker puts malicious content in front of the agent. The content tells the agent to retrieve private information. The agent follows the injected instruction. An external channel carries the data out. No traditional exploit is necessary. The risk comes from the combination of capabilities." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/05.webp" alt="This pattern has been seen in production systems. Researchers have repeatedly demonstrated prompt-injection attacks where untrusted content causes AI systems to access or expose sensitive information. Examples across different products: email with malicious instructions embedded in messages, documents with hidden instructions in files, web content from attacker-controlled pages, and tools or MCP combinations that expose data and provide an exfiltration path." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/06.webp" alt="Break the chain: You don&#x27;t always need all three. The strongest mitigation is to remove a leg of the trifecta when you can. No private data: limit what the agent can access. No untrusted content: don&#x27;t expose the agent to attacker-controlled input. No external communication: block outbound channels. If you can remove one leg, the trifecta is broken." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/07.webp" alt="If you can&#x27;t remove a leg, then constrain all three. Scope data: per-task access, not standing access to everything. Limit tools: expose only the capabilities the task requires. Control output channels: restrict where data can leave. Require approval: put a human or policy gate before consequential actions. Log and trace: make every sensitive tool call reviewable. Reduce what the agent can see, do, and send." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+      <figure>
+        <img src="../../assets/lethal-trifecta/08.webp" alt="Break one leg. Or constrain all three. Don&#x27;t rely on the model to recognize the attack. Design the system so the attack can&#x27;t become an action. Save this before your next agent gets tool access." width="1080" height="1350" loading="lazy">
+      </figure>
+    
+  </div>
+
+  <p class="aiotc-download">
+    <a href="../../assets/lethal-trifecta/lethal-trifecta.pdf" download>Download the deck (PDF, 8 pages)</a>
+    
+  </p>
+
+  <div class="aiotc-body"><p>Private data access, untrusted content, and external communication. Each can be useful on its own. Together, they create what security researcher Simon Willison named the "lethal trifecta" in June 2025.</p></div>
+
+  <nav class="aiotc-pager">
+    <a href="../harness-engineering/" class="prev"><span>Previous</span>What is Harness in AI</a>
+    
+  </nav>
+</article>
+
+
+  
+  
+  <aside class="aiotc-cta">
+    <h2>Where does your company actually stand on AI?</h2>
+    <p>A free scan across six areas — strategy, data, applications, skills, risk and measurement. About four minutes, and you get the two things to fix first as a PDF.</p>
+    <a href="https://www.mehmeterkek.com/ai-maturity-report.html" class="btn btn-primary">Take the scan <span class="arrow">&rarr;</span></a>
+  </aside>
+  
+
+  <footer>
+    <p>
+      One idea per post, explained properly. Written by hand, no schedule to keep.
+    </p>
+    <p>
+      Pulse feed: <a href="../../pulse/feed.xml">RSS</a> ·
+      Bites feed: <a href="../../bites/feed.xml">RSS</a>
+    </p>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Written by <a href="https://www.mehmeterkek.com">Mehmet Erkek</a>.</p>
+    <p>Pulse is assembled with a model and edited by hand. Bites are written by hand.</p>
+  </div>
+</footer>
+
+<!-- Digital twin chat widget — its own Cloud Run service, see repos/my-digital-twin -->
+<script src="https://my-digital-twin-625021277379.europe-west3.run.app/twin-widget.js"
+        data-endpoint="https://my-digital-twin-625021277379.europe-west3.run.app"
+        data-name="Mehmet Erkek"
+        data-title="AI Leader &amp; Technology Executive"
+        defer></script>
+
+</body>
+</html>

@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/pulse/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Pulse" />
   <description>One idea per post, in plain English. What a thing actually is, where it came from, and why it became infrastructure while nobody was looking.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 11 Aug 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Mon, 17 Aug 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>What Is the Lethal Trifecta? The Pattern Behind AI Agent Attacks</title>
+    <link>https://aiontheclock.mehmeterkek.com/bites/lethal-trifecta/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/bites/lethal-trifecta/</guid>
+    <pubDate>Mon, 17 Aug 2026 09:00:00 +0300</pubDate>
+    <description>Private data access, untrusted content, and external communication — each fine alone, dangerous combined. Simon Willison&#x27;s name for the pattern behind most AI agent security incidents, and how to break it.</description>
+  </item>
 
   <item>
     <title>What is Harness in AI</title>
