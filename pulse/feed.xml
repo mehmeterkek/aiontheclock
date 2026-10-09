@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Three AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 08 Sep 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 9 October 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/2026-10-09/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/2026-10-09/</guid>
+    <pubDate>Fri, 09 Oct 2026 07:00:00 +0300</pubDate>
+    <description>OpenAI doubles down on decision to fire three AI safety researchers. OpenAI posted on X Friday defending its firing of safety researchers Jasmine Wang, Tomek Korbak and Mikita Balesni, saying an internal investigation found they violated policies on handling sensitive information — a &amp;quot;significant breach of trust.&amp;quot; The post responded to an open letter the trio published Thursday, arguing they were actually dismissed for raising safety concerns and had acted within OpenAI&amp;#x27;s mission and norms. Cloudflare Open Sources Decision Models for AI Agents. Cloudflare released Clef, open-weight decision models in 9B (Clef-Flash) and 27B sizes, that take a state and schema of typed questions and return per-option probabilities instead of generated text. Clef-Flash hits 38.8ms median latency versus 209.3ms for the 27B model, and the API is compatible with Typesafe AI&amp;#x27;s Jev System One. Weights are on Hugging Face, with hosting via Workers AI and a fine-tuning service coming. Ben Affleck is an AI nerd, and the internet is impressed. Ben Affleck went viral this week for fluently discussing neural networks, transformers, tensors, and GPUs across interviews with GQ&amp;#x27;s Zach Baron and Bloomberg&amp;#x27;s Lucas Shaw at the Screentime 2026 conference. He sold his AI filmmaking startup to Netflix for a reported $587 million (he disputes the figure) and used fine-tuned open models in post-production on his movie &amp;quot;Animals.&amp;quot; </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 8 September 2026</title>

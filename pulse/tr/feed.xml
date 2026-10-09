@@ -7,7 +7,15 @@
   <atom:link href="https://aiontheclock.mehmeterkek.com/bites/feed.xml" rel="related" type="application/rss+xml" title="AI on the Clock — Bites" />
   <description>Three AI stories a day, chosen and edited by hand. Bites is the other half: explainers and carousels, twice a week.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 08 Sep 2026 07:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 07:00:00 +0300</lastBuildDate>
+
+  <item>
+    <title>AI on the Clock — 9 October 2026</title>
+    <link>https://aiontheclock.mehmeterkek.com/pulse/tr/2026-10-09/</link>
+    <guid isPermaLink="true">https://aiontheclock.mehmeterkek.com/pulse/tr/2026-10-09/</guid>
+    <pubDate>Fri, 09 Oct 2026 07:00:00 +0300</pubDate>
+    <description>OpenAI doubles down on decision to fire three AI safety researchers. OpenAI, Cuma günü X&amp;#x27;te yaptığı açıklamada Jasmine Wang, Tomek Korbak ve Mikita Balesni&amp;#x27;nin işten çıkarılma kararının arkasında durduğunu söyledi; üçlünün &amp;#x27;hassas bilgilerin işlenmesine dair net politikaları&amp;#x27; ihlal ettiğini, bunun güvenlik endişelerini dile getirmekle ilgisi olmadığını belirtti. Üçlü Perşembe günü yayınladığı açık mektupta güvenlik kaygıları yüzünden kovulduklarını iddia etmişti. OpenAI, iç soruşturmanın mektupta belirtilenin ötesinde ihlaller bulduğunu söyledi ama detay paylaşmadı. Cloudflare Open Sources Decision Models for AI Agents. Cloudflare, &amp;quot;Birthday Week&amp;quot; etkinliğinde Clef adlı açık ağırlıklı karar modellerini duyurdu: 9B parametreli Clef-Flash ve 27B parametreli Clef. Modeller metin, JSON, görsel ve video girdisini tek bir forward pass&amp;#x27;te işleyip her seçenek için olasılık döndürüyor. Clef-Flash&amp;#x27;in medyan gecikmesi 38.8 ms, Clef 27B&amp;#x27;nin ise 209.3 ms. Modeller Workers AI ve Hugging Face üzerinden erişilebilir. Ben Affleck is an AI nerd, and the internet is impressed. Ben Affleck, AI film prodüksiyon startup&amp;#x27;ını Netflix&amp;#x27;e iddiaya göre 587 milyon dolara satan (kendisi bu rakamı yanlış buluyor) oyuncu, GQ&amp;#x27;nun &amp;quot;One More Question&amp;quot; dizisinde Zach Baron&amp;#x27;a verdiği röportajda neural network, transformer, tensor, GPU ve inference terimlerini kullanarak viral oldu. Bloomberg&amp;#x27;den Lucas Shaw&amp;#x27;a Screentime 2026 konferansında ise açık kaynak modellerin ağırlıklarını &amp;quot;unfreeze&amp;quot; ederek &amp;quot;Animals&amp;quot; filmi için nasıl fine-tune ettiğini anlattı. </description>
+  </item>
 
   <item>
     <title>AI on the Clock — 8 September 2026</title>
